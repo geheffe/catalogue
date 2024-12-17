@@ -1,6 +1,6 @@
 # Settings  
-baseurl = "http://example.org/"
-languageCode = "en-us"
+baseurl = "https://geheffe.github.io/catalogue/"
+languageCode = "fr"
 title = "AutoPhugo"
 theme = "autophugo"
 disableKinds = ["taxonomy", "term"]
