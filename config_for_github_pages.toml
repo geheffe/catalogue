@@ -1,6 +1,6 @@
 # Settings
-baseurl = "https://kc0bfv.github.io/autophugo/"
-languageCode = "en-us"
+baseurl = "https://geheffe.github.io/catalogue/"
+languageCode = "fr"
 title = "AutoPhugo"
 theme = "autophugo"
 disableKinds = ["taxonomy", "term"]
@@ -34,8 +34,8 @@ disableKinds = ["taxonomy", "term"]
     #facebook_admin = "facebook_example"
 
     [params.author]
-    name = "Karl Sickendick"
-    email = "kc0bfv@gmail.com"
+    name = "Francoise BOTREL REY"
+    email = "mariefrancoisrey@gmail.com"
 
     # Headerbar links
     # Do not put too many links here,

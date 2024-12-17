@@ -1,4 +1,4 @@
-baseURL = 'https://geheffe.github.io/catalogue/'
-languageCode = 'fr'
-title = 'Le catalogue de Françoise BOTREL REY'
-theme = 'autophugo'
+baseURL = "https://geheffe.github.io/catalogue/"
+languageCode = "fr"
+title = "Le catalogue de Françoise BOTREL REY"
+theme = "autophugo"
