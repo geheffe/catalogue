@@ -1,6 +1,6 @@
 ---
 title: ""
-date: 2024-12-17T21:32:45+01:00
+date: 2024-12-18T20:24:59+01:00
 weight: 0
 albumthumb: "/blanche/l_arc_en_ciel_de_blanche.png"
 draft: false
@@ -11,4 +11,6 @@ draft: false
 resources:
 - src: "/blanche/l_arc_en_ciel_de_blanche.png"
   weight: 10
+- src: "/blanche/carte_visite_avec_cadre1.jpg"
+  weight: 20
 ---
