@@ -16,7 +16,6 @@ disableKinds = ["taxonomy", "term"]
     # Meta
     description = "AutoPhugo - Photo Gallery on Hugo"
     keywords = "phugo, hugo, photogallery, photoblog, hugo theme"
-    favicon = false
     #msvalidate = ""
     #googlesiteverification = ""
     thumb_width = 480
