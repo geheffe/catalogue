@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Francoise Rey, ma peinture",
+  "short_name": "F_Rey",
   "icons": [
     {
       "src": "/static/web-app-manifest-192x192.png",
