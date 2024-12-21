@@ -81,4 +81,8 @@ resources:
   weight: 350
 - src: "/catalogue/page_1035.jpg"
   weight: 360
+- src: "/catalogue/page_1038.jpg"
+  weight: 370
+- src: "/catalogue/page_1039.jpg"
+  weight: 380
 ---
