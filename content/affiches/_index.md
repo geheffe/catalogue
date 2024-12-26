@@ -27,6 +27,4 @@ resources:
   weight: 80
 - src: "/affiches/flyer_Tudy_2023.jpg"
   weight: 90
-- src: "/affiches/flyer_expo_maison_2023.jpg"
-  weight: 100
 ---

@@ -14,8 +14,8 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
     # Meta
-    description = "AutoPhugo - Photo Gallery on Hugo"
-    keywords = "phugo, hugo, photogallery, photoblog, hugo theme"
+    description = "Catalogue de Francoise"
+    keywords = "autophugo"
     #msvalidate = ""
     #googlesiteverification = ""
     thumb_width = 480
@@ -26,7 +26,7 @@ disableKinds = ["taxonomy", "term"]
     #breadcrumb_use_title = false
     #filename_as_phototitle = false
     images_downloadable = false
-    #images_downloadable_use_orig = false
+    images_downloadable_use_orig = false
     #taxonomies_links = false
 
     #[params.social]
@@ -36,49 +36,29 @@ disableKinds = ["taxonomy", "term"]
     [params.author]
     name = "Françoise BOTREL REY"
     email = "mariefrancoisrey@gmail.com"
-
+    
     # Headerbar links
     # Do not put too many links here,
     # it will break mobile appearance
 
-    #[[params.header.links]]
-    #name = "About"
+    [[params.header.links]]
+    #name = "A propos"
     #url = "#footer"
     #icon = "fa-info-circle"
 
     # Footer panel
 
-    #[params.footer.paragraph]
-    #headline = "Magna feugiat sed adipiscing"
-    #text = "Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum."
+    [params.footer.paragraph]
+    headline = "Quelques nouvelles"
+    text = "Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum."
 
-    #[params.footer.social]
-    headline = "Follow me"
+    [params.footer.social]
+    headline = "Suivez-moi sur :"
 
-    #[[params.footer.social.links]]
-    #label = "Twitter"
-    #url = "#"
-    #icon = "fa-twitter"
-
-    #[[params.footer.social.links]]
-    #label = "Facebook"
-    #url = "#"
-    #icon = "fa-facebook"
-
-    #[[params.footer.social.links]]
-    #label = "Instagram"
-    #url = "#"
-    #icon = "fa-instagram"
-
-    #[[params.footer.social.links]]
-    #label = "Github"
-    #url = "#"
-    #icon = "fa-github"
-
-    #[[params.footer.social.links]]
-    #label = "LinkedIn"
-    #url = "#"
-    #icon = "fa-linkedin"
+    [[params.footer.social.links]]
+    label = "Facebook"
+    url = "#"
+    icon = "fa-facebook"
 
     # Contact form
 
@@ -93,26 +73,26 @@ disableKinds = ["taxonomy", "term"]
     # - then get the integration endpoint generated to you form
     # - you're done. Happy mailing!
 
-    #[params.footer.contact]
-    hide = false # Set this to true if you don't want to have a contact form on your site
-    #formspreeID = "myuniqueID" # Getting value from Formspree integration endpoint (eg. https://formspree.io/f/myuniqueID)
-    #headline = "Get in touch"
-    #buttonText = "Send"
-    #resetText = "Reset"
+    [params.footer.contact]
+    hide = true # Set this to true if you don't want to have a contact form on your site
+    formspreeID = "myuniqueID" # Getting value from Formspree integration endpoint (eg. https://formspree.io/f/myuniqueID)
+    headline = "Contactez-moi"
+    buttonText = "Envoyez"
+    resetText = "Refaire..."
 
     # 'warning' defines error messages for invalid inputs
-    #[params.footer.contact.name]
-    #text = "Name *"
-    #warning = "Please, enter your name"
+    [params.footer.contact.name]
+    text = "Nom *"
+    warning = "SVP, entrez votre nom"
 
-    #[params.footer.contact.email]
-    #text = "Email *"
-    #warning = "Please, enter your email."
+    [params.footer.contact.email]
+    text = "Email *"
+    warning = "SVP, entrez votre email."
 
-    #[params.footer.contact.message]
-    #text = "Message *"
-    #warning = "Please, enter your message"
+    [params.footer.contact.message]
+    text = "Message *"
+    warning = "SVP, tapez votre message"
 
-    copyright ="Copyright © 2025"
+    # Copyright
     [params.footer.copyright]
     name = "Francoise BOTREL REY"

@@ -43,7 +43,7 @@ body.loading *, body.loading *:before, body.loading *:after { -moz-animation: no
 body.resizing *, body.resizing *:before, body.resizing *:after { -moz-animation: none !important; -webkit-animation: none !important; -ms-animation: none !important; animation: none !important; -moz-transition: none !important; -webkit-transition: none !important; -ms-transition: none !important; transition: none !important; }
 
 /* Type */
-body, input, select, textarea { color: #a0a0a1; font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 15pt; font-weight: 300; letter-spacing: 0.025em; line-height: 1.65; }
+body, input, select, textarea { color: #f5fcae; font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 19pt; font-weight: 300; letter-spacing: 0.025em; line-height: 1.65; }
 @media screen and (max-width: 1680px) { body, input, select, textarea { font-size: 11pt; } }
 
 a { -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; border-bottom: dotted 1px; color: #7293A0; text-decoration: none; }
@@ -291,7 +291,7 @@ body.loading #main .thumb { -moz-pointer-events: none; -webkit-pointer-events: n
 #main .thumb:nth-child(12) { transition-delay: 1.4s; }
 
 /* Footer */
-#footer .copyright { color: #505051; font-size: 0.9em; }
+#footer .copyright { color: #ffd700; font-size: 1em; }
 #footer .copyright a { color: inherit; }
 
 
