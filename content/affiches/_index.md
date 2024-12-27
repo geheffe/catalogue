@@ -1,5 +1,5 @@
 ---
-title: "Affiches"
+title: ""
 date: 2024-12-17T21:07:47+01:00
 weight: 0
 albumthumb: "/affiches/coop.jpg"
