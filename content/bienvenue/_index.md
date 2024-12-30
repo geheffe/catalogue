@@ -11,4 +11,10 @@ draft: false
 resources:
 - src: "/bienvenue/bienvenue.jpg"
   weight: 10
+- src: "/bienvenue/billet_1.jpg"
+  weight: 20
+- src: "/bienvenue/photos_1.jpg"
+  weight: 30
+- src: "/bienvenue/photos_2.jpg"
+  weight: 40
 ---

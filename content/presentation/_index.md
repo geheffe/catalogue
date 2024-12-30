@@ -13,6 +13,6 @@ resources:
   weight: 10
 - src: "/presentation/presentation.jpg"
   weight: 20
-- src: "/presentation/carte_visite_avec_cadre1.jpg"
+- src: "/presentation/carte_visite_avec_cadre9.jpg"
   weight: 30
 ---
