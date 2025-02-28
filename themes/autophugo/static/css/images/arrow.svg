@@ -2,10 +2,10 @@
 	<style>
 		line {
 			stroke: #ffd700;
-			stroke-width: 1.5px;
+			stroke-width: 1px;
 		}
 	</style>
-	<line x1="32" y1="16" x2="64" y2="48" />
-	<line x1="32" y1="80" x2="64" y2="48" />
+	<line x1="48" y1="32" x2="64" y2="48" />
+	<line x1="48" y1="64" x2="64" y2="48" />
 
 </svg>
