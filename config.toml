@@ -1,5 +1,5 @@
 # Settings  
-baseurl = "https://github.com/geheffe/catalogue/"
+baseurl = "https://github.com/site_essai/"
 languageCode = "fr"
 title = "Le catalogue de Francoise"
 theme = "autophugo"
@@ -28,71 +28,46 @@ disableKinds = ["taxonomy", "term"]
     images_downloadable = false
     images_downloadable_use_orig = false
     #taxonomies_links = false
-
-    #[params.social]
-    #twitter = "twitter_example"
-    #facebook_admin = "facebook_example"
-
-    [params.author]
-    name = "Françoise BOTREL REY"
-    email = "mariefrancoisrey@gmail.com"
     
-    # Headerbar links
-    # Do not put too many links here,
-    # it will break mobile appearance
-
-    [[params.header.links]]
-    #name = "A propos"
-    #url = "#footer"
-    #icon = "fa-info-circle"
-
-    # Footer panel
-
-    [params.footer.paragraph]
-    headline = "Quelques nouvelles"
-    text = "Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum."
-
-    [params.footer.social]
-    headline = "Suivez-moi sur :"
-
-    [[params.footer.social.links]]
-    label = "Facebook"
-    url = "#"
-    icon = "fa-facebook"
-
-    # Contact form
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your integration endpoint address under 'formspreeID' below
-    # - create a formspree account and a simple form 
-    # - then get the integration endpoint generated to you form
-    # - you're done. Happy mailing!
-
-    [params.footer.contact]
-    hide = true # Set this to true if you don't want to have a contact form on your site
-    formspreeID = "myuniqueID" # Getting value from Formspree integration endpoint (eg. https://formspree.io/f/myuniqueID)
-    headline = "Contactez-moi"
-    buttonText = "Envoyez"
-    resetText = "Refaire..."
-
-    # 'warning' defines error messages for invalid inputs
-    [params.footer.contact.name]
-    text = "Nom *"
-    warning = "SVP, entrez votre nom"
-
-    [params.footer.contact.email]
-    text = "Email *"
-    warning = "SVP, entrez votre email."
-
-    [params.footer.contact.message]
-    text = "Message *"
-    warning = "SVP, tapez votre message"
-
-    # Copyright
-    [params.footer.copyright]
-    name = "Francoise BOTREL REY"
+    # Voir "Bout de codes" : autorise html dans le markdown.....     
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            [markup.goldmark.extensions.passthrough]
+                enable = true
+                [markup.goldmark.extensions.passthrough.delimiters]
+                    block = [['\[', '\]'], ['$$', '$$']]
+                    inline = [['\(', '\)']]
+        [markup.goldmark.renderHooks]
+            [markup.goldmark.renderHooks.link]
+                enableDefault = true
+        [markup.goldmark.renderer]
+# sans la commande ci-dessous, le html ne fonctionne pas...
+            unsafe = true            
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+    [markup.highlight]
+      anchorLineNos = false
+      codeFences = true
+      guessSyntax = false
+      hl_Lines = ''
+      hl_inline = false
+      lineAnchors = ''
+      lineNoStart = 1
+      lineNos = false
+      lineNumbersInTable = true
+      noClasses = true
+      style = 'monokai'
+      tabWidth = 4
+      wrapperClass = 'highlight'      
+        
+[params.render_hooks.image]
+errorLevel = 'warning' # ignore (default), warning, or error (fails the build)
+            
+[module]
+    [module.hugoVersion]
+     extended = true 
+           
+            
