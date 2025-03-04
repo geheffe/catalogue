@@ -24,7 +24,7 @@ resources:
   alt="" 
   class=""
   height=""
-  width="700px"
+  width="500px"
 >}}
 
 </center>

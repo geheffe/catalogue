@@ -15,7 +15,7 @@ resources:
 <span style="color:red; font-size:150%;">Page vide, pour l'instant...</span><br>
 ...pour les futurs débordements de la page 1. 
 
-<br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 {{< figure
   title=""
@@ -23,7 +23,7 @@ resources:
   alt="" 
   class=""
   height=""
-  width="800px"
+  width="500px"
 >}}
 
 </center>
