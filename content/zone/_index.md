@@ -23,11 +23,10 @@ Ici, vous pouvez faire des {{< highlight go "hl_inline=true" >}}copier-coller{{<
 {{< figure
   title=""
   src="/images/bandeau_toiles_2.jpg"
-  alt=""
-  
+  alt="" 
   class=""
   height=""
-  width="600px"
+  width="500px"
 >}}
 
 </center>

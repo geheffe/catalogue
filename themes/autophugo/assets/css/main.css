@@ -44,7 +44,7 @@ body.resizing *, body.resizing *:before, body.resizing *:after { -moz-animation:
 
 /* Type */
 body, input, select, textarea { color: #ffd700; font-family: "Source Sans Pro", Helvetica, sans-serif; font-size: 19pt; font-weight: 300; letter-spacing: 0.025em; line-height: 1.65; }
-@media screen and (max-width: 1680px) { body, input, select, textarea { font-size: 18pt; } }
+@media screen and (max-width: 1680px) { body, input, select, textarea { font-size: 16pt; } }
 
 a { -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; border-bottom: dotted 1px; color: #7293A0; text-decoration: none; }
 a:hover { border-bottom-color: transparent; }
