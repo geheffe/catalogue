@@ -8,7 +8,7 @@ resources:
 
 |            |           |              | 
 |   ---      |    :-:    |      --:     |
-|  2.)       |<span  style="background-color:red; color:#ffd700; font-size:120%; font-family:verdana;">&nbsp;Z. T.&nbsp;</span>|     suite    | 
+|  2.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;Zone Technique&nbsp;</span>|     suite    | 
 
 >|            |           |
 |   ---      |    ---    |
