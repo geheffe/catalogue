@@ -26,7 +26,7 @@ Ici, vous pouvez faire des {{< highlight go "hl_inline=true" >}}copier-coller{{<
   alt="" 
   class=""
   height=""
-  width="500px"
+  width="80%"
 >}}
 
 </center>

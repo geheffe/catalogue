@@ -23,7 +23,7 @@ resources:
   alt="" 
   class=""
   height=""
-  width="500px"
+  width="80%"
 >}}
 
 </center>
