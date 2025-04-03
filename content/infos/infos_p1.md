@@ -1,5 +1,5 @@
 ---
-title: "ZONE TECHNIQUE page n°1 : Cliquez pour rentrer !"
+title: "INFOS page n°1 : Cliquez pour rentrer !"
 date: 2025-02-07T16:13:19+01:00
 albumthumb: ""
 draft: false
@@ -8,7 +8,7 @@ resources:
            
 |            |           |              | 
 |   ---      |    :-:    |      --:     |
-|  1.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;Zone Technique&nbsp;</span>| {{< annee_courante >}} |
+|  1.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;Infos page n°1&nbsp;</span>| {{< annee_courante >}} |
 
 >|            |           |
 |   ---      |    ---    |

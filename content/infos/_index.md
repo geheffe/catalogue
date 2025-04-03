@@ -2,7 +2,7 @@
 title: ""
 date: 2025-02-18T15:19:25+01:00
 weight: 0
-albumthumb: "/zone/bandeau_zone.jpg"
+albumthumb: "/infos/bandeau_infos.jpg"
 draft: false
 resources:
 ---
@@ -10,7 +10,7 @@ resources:
 
 <span  style="background-color:red; color:#ffd700; 
            font-size:120%;font-family:verdana;">
-           ...ZONE TECHNIQUE - accueil...</span>
+           ...INFOS - accueil...</span>
 
 Ici, vous pouvez faire des {{< highlight go "hl_inline=true" >}}copier-coller{{< /highlight >}}, cliquer des liens...
 <br>
@@ -30,5 +30,9 @@ Ici, vous pouvez faire des {{< highlight go "hl_inline=true" >}}copier-coller{{<
 >}}
 
 </center>
-<br>
+
+|              | 
+|      --:     |
+| [site propulsé par HUGO](https://gohugo.io/)|
+
 

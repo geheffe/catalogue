@@ -1,5 +1,5 @@
 ---
-title: "ZONE TECHNIQUE page n°2" 
+title: "INFOS page n°2" 
 date: 2025-01-29T15:37:09+01:00
 albumthumb: ""
 draft: false
@@ -8,7 +8,7 @@ resources:
 
 |            |           |              | 
 |   ---      |    :-:    |      --:     |
-|  2.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;Zone Technique&nbsp;</span>|     suite    | 
+|  2.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;Infos page n°2&nbsp;</span>|     suite    | 
 
 >|            |           |
 |   ---      |    ---    |
