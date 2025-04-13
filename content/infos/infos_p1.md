@@ -10,7 +10,7 @@ resources:
 |   ---      |    :-:    |      --:     |
 |  1.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;Infos page n°1&nbsp;</span>| {{< annee_courante >}} |
 
->|            |           |
+|            |           |
 |   ---      |    ---    |
 |[Lien vers les amis de Châteauneuf du Faou](https://www.lesamisdechateauneufdufaou.fr/)|Foire aux toiles|
 |<span style="font-size:80%;">Le site de Ste Marine est vraiment à découvir. L'Abri du marin bien sûr, la Coop proche de l'embarcadère qui, en saison, vous permet de traverser côté Bénodet. Autres lieux d'exposition : le Fort et le Corps de Garde à la Pointe de Combrit.</span>|[L&rsquo;abri du marin à Ste Marine - Combrit](https://combrit-saintemarine.bzh/se-divertir/culture/musee-de-labri-du-marin/)|

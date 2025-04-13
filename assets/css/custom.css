@@ -8,9 +8,9 @@
 
 .container-unifie {
     width: 100%;
-    max-width: 1200px; /* Largeur cible (comme votre galerie) */
+    max-width: 1200px; /* Largeur cible */
     margin: 0 auto;   /* Centrage */
-    padding: 0 10%;  /* Marge interne (responsive) */
+    padding: 0 2%;  /* Marge interne (responsive) */
     background: #423737;
 /*    box-shadow: 0 0 0 1px red;  Ligne de debug (à supprimer après) */
 }
