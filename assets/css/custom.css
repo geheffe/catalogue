@@ -1,0 +1,37 @@
+/****************** Cadrage des pages infos *************************/
+.infos-list {
+  margin: 2rem 0;
+}
+.infos-article {
+  padding: 2rem; /* Pour aérer le contenu */
+}
+
+
+/* Cible le conteneur principal quel qu'il soit */
+/* Exclure Magnific Popup des transformations */
+.container-unifie {
+    width: 100%;
+    max-width: 1200px; /* Largeur cible (comme votre galerie) */
+    margin: 0 auto;   /* Centrage */
+    padding: 0 20px;  /* Marge interne (responsive) */
+    background: #423737;
+/*    box-shadow: 0 0 0 1px red;  Ligne de debug (à supprimer après) */
+}
+
+
+/* Réinitialisation des marges et padding */
+body {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    overflow-x: hidden; /* Empêche les barres de défilement horizontales */
+}
+  
+/* Correction spécifique pour le header */
+header, .header, #header {
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+}
+/****************** Fin du cadrage des pages infos ******************/
+
+
