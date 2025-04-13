@@ -1,6 +1,6 @@
 /****************** Cadrage des pages infos *************************/
 .infos-list {
-  margin: 2rem;
+  margin: 1rem;
 }
 .infos-article {
   padding: 0 !important; /* Pour aérer le contenu */
