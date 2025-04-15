@@ -15,7 +15,11 @@ resources:
 |   ---      |    :-:    |      --:     |
 |  3.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;... et aussi :&nbsp;</span>|           | 
 
-<br>
+|              | 
+|      ---     |
+|[Bijoux, &ldquo;Les Pépites Bleues&rdquo;, par Marina](https://www.facebook.com/p/Les-p%C3%A9pites-bleues-100057797823896/)|
+
+<br><br>
 
 <center>
 
