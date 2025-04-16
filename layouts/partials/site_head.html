@@ -1,3 +1,4 @@
+<!-- Override this file in your site's layout to embed custom content in HEAD -->
 <script>
 if ('ontouchstart' in window) {
     document.querySelectorAll('.mfp-img').forEach(img => {
@@ -67,7 +68,13 @@ function handleMove(e) {
     // Dans handleMove()
     translateX = (clientX - startX) * 0.8; // Réduit la vitesse
     translateY = clientY - startY;
-
+///////// Pour limiter le déplacement aux bords de l'image : //////////////    
+    const imgRect = img.getBoundingClientRect();
+    const scale = 2.2;
+//               Limites calculées dynamiquement
+    translateX = Math.min(Math.max(translateX, -imgRect.width * (scale-1)/2), imgRect.width * (scale-1)/2);
+    translateY = Math.min(Math.max(translateY, -imgRect.height * (scale-1)/2), imgRect.height * (scale-1)/2);   
+///////////////////////////////////////////////////////////////////////////
     // Applique la position
     img.style.setProperty('--tx', `${translateX}px`);
     img.style.setProperty('--ty', `${translateY}px`);
@@ -120,3 +127,4 @@ document.addEventListener('mfpOpen', () => {
 setInterval(nuclearZoom, 200);
 document.addEventListener('mfpOpen', nuclearZoom);
 </script>
+
