@@ -1,0 +1,122 @@
+<script>
+if ('ontouchstart' in window) {
+    document.querySelectorAll('.mfp-img').forEach(img => {
+        img.style.touchAction = 'manipulation';
+    });
+}
+
+/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////////////
+// Override total de Magnific
+function nuclearZoom() {
+    const container = document.querySelector('.mfp-wrap');
+    const img = document.querySelector('.mfp-img');    
+    if (!img || img.dataset.zoomFixed) return;
+    
+    img.dataset.zoomFixed = "true";
+    
+    img.addEventListener('click', function(e) {
+        // Empêche tout comportement par défaut
+        e.stopImmediatePropagation();
+        e.preventDefault();
+    
+        // Zoom/dézoom instantané
+        const isZoomed = this.classList.toggle('zoomed');
+    
+        // Applique immédiatement la transformation
+        if (isZoomed) {
+            this.style.transform = `scale(2.2) translate(0, 0)`;
+        } else {
+            this.style.transform = 'scale(1)';
+        }
+    }, { capture: true });
+        
+}
+///////////////////////////////////////////////////////////////////////////
+
+// Variables globales
+let isDragging = false, startX, startY, translateX = 0, translateY = 0;
+
+// Gestionnaire de zoom PERSISTANT
+function toggleZoom(e) {
+    const img = e.target.closest('.mfp-img');
+    if (!img || isDragging) return;
+
+    e.stopImmediatePropagation();
+    const isZoomed = img.classList.toggle('zoomed');
+    
+    if (isZoomed) {
+        img.style.setProperty('--tx', '0px');
+        img.style.setProperty('--ty', '0px');
+    } else {
+        img.style.removeProperty('--tx');
+        img.style.removeProperty('--ty');
+    }
+}
+
+// Gestion du drag
+function handleMove(e) {
+    if (!isDragging) return;
+    
+    const img = document.querySelector('.mfp-img.zoomed');
+    if (!img) return;
+
+    // Calcul des nouvelles positions
+    const clientX = e.clientX || e.touches[0].clientX;
+    const clientY = e.clientY || e.touches[0].clientY;
+    
+    // Dans handleMove()
+    translateX = (clientX - startX) * 0.8; // Réduit la vitesse
+    translateY = clientY - startY;
+
+    // Applique la position
+    img.style.setProperty('--tx', `${translateX}px`);
+    img.style.setProperty('--ty', `${translateY}px`);
+}
+
+// Événements desktop
+document.addEventListener('mousedown', (e) => {
+    const img = e.target.closest('.mfp-img.zoomed');
+    if (img) {
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+        img.style.cursor = 'grabbing';
+    }
+});
+
+// Événements tactiles
+document.addEventListener('touchstart', (e) => {
+    const img = e.target.closest('.mfp-img.zoomed');
+    if (img && e.touches.length === 1) {
+        isDragging = true;
+        startX = e.touches[0].clientX - translateX;
+        startY = e.touches[0].clientY - translateY;
+        img.style.cursor = 'grabbing';
+    }
+}, { passive: false });
+
+// Événements communs
+document.addEventListener('mousemove', handleMove);
+document.addEventListener('touchmove', handleMove, { passive: false });
+document.addEventListener('mouseup', endDrag);
+document.addEventListener('touchend', endDrag);
+
+function endDrag() {
+    isDragging = false;
+    const img = document.querySelector('.mfp-img.zoomed');
+    if (img) img.style.cursor = 'grab';
+}
+
+// Initialisation
+document.addEventListener('mfpOpen', () => {
+    document.querySelectorAll('.mfp-img').forEach(img => {
+        img.addEventListener('click', toggleZoom, { capture: true });
+    });
+});
+
+
+///////////////////////////////////////////////////////////////////////////
+// Surveillance agressive
+setInterval(nuclearZoom, 200);
+document.addEventListener('mfpOpen', nuclearZoom);
+</script>
