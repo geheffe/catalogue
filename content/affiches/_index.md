@@ -2,7 +2,7 @@
 title: ""
 date: 2024-12-17T21:07:47+01:00
 weight: 0
-albumthumb: "/affiches/melgven_2025.jpg"
+albumthumb: "/affiches/chateauneuf_2025.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
