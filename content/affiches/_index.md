@@ -10,9 +10,9 @@ draft: false
 #  description: A sub-title or description for the photo
 resources:
 - src: "/affiches/chateauneuf_2025.jpg"
-  weight: 100
-- src: "/affiches/melgven_2025.jpg"
   weight: 90
+- src: "/affiches/melgven_2025.jpg"
+  weight: 100
 - src: "/affiches/coop.jpg"
   weight: 110
 - src: "/affiches/expo_collective_etuve.jpg"
