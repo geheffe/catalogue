@@ -1,8 +1,8 @@
 ---
 title: ""
-date: 2024-12-17T21:07:47+01:00
+date: 2025-04-22T03:00:00+01:00
 weight: 0
-albumthumb: "/affiches/melgven_2025.jpg"
+albumthumb: "/affiches/chateauneuf_2025.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
@@ -10,9 +10,9 @@ draft: false
 #  description: A sub-title or description for the photo
 resources:
 - src: "/affiches/chateauneuf_2025.jpg"
-  weight: 100
-- src: "/affiches/melgven_2025.jpg"
   weight: 90
+- src: "/affiches/melgven_2025.jpg"
+  weight: 100
 - src: "/affiches/coop.jpg"
   weight: 110
 - src: "/affiches/expo_collective_etuve.jpg"

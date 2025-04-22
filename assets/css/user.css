@@ -1,0 +1,75 @@
+/* Override this by placing your own custom "user.css" in your "assets/css" directory.  When you do, this file will automatically be ignored! */
+/****************** Cadrage des pages infos *************************/
+.infos-list {
+  margin: 1rem;
+}
+.infos-article {
+  padding: 0 !important; /* Pour aérer le contenu */
+}
+
+.container-infos {
+    width: 100%;
+    max-width: 1200px; /* Largeur cible */
+    margin: 0 auto;   /* Centrage */
+    padding: 0 2%;  /* Marge interne (responsive) */
+    background: #423737;
+/*    box-shadow: 0 0 0 1px red;  Ligne de debug (à supprimer après) */
+}
+
+/* Réinitialisation des marges et padding */
+body {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    overflow-x: hidden; /* Empêche les barres de défilement horizontales */
+}
+  
+/* Correction spécifique pour le header */
+header, .header, #header {
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+}
+/****************** Fin du cadrage des pages infos ******************/
+
+/****************** Debut magnific-zoom *****************************/
+
+/* État zoomé PERSISTANT */
+.mfp-img.zoomed {
+    transform: scale(2.2) translate(var(--tx, 0), var(--ty, 0)) !important;
+    cursor: grab !important;
+    will-change: transform;
+    position: relative;
+    z-index: 2147483647;
+}
+
+/* Curseurs */
+.mfp-img {
+    cursor: zoom-in !important;
+    transition: transform 0.1s ease-out !important;
+}
+.mfp-img.zoomed:active {
+    cursor: grabbing !important;
+}
+
+/* Conteneur */
+.mfp-container {
+    overflow: visible !important;
+    touch-action: none !important; /* Essential pour mobile */
+}
+/************************************************************/
+button.mfp-close {
+    all: unset !important;
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    background: red !important;
+    color: white !important;
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 30px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 99999 !important;
+}
