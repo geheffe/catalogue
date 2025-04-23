@@ -9,6 +9,8 @@ draft: false
 #  phototitle: A title for the photo
 #  description: A sub-title or description for the photo
 resources:
+- src: "/bienvenue/bienvenue_intro.jpg"
+  weight: 10
 - src: "/bienvenue/billet_2.jpg"
   weight: 70
 - src: "/bienvenue/billet_1.jpg"
