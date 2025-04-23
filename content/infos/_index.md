@@ -28,10 +28,7 @@ Ici, vous pouvez faire des {{< highlight go "hl_inline=true" >}}copier-coller{{<
   width="80%"
 >}}
 
-</center>
+</center><br>
 
-|              | 
-|      --:     |
-| [site propulsé par HUGO](https://gohugo.io/)|
 
 

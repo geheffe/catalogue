@@ -34,4 +34,7 @@ resources:
 
 </center>
 
+|              | 
+|      --:     |
+| [site propulsé par HUGO](https://gohugo.io/)|
 <br>
