@@ -13,12 +13,11 @@ resources:
            ...INFOS - accueil...</span>
 
 Ici, vous pouvez faire des {{< highlight go "hl_inline=true" >}}copier-coller{{< /highlight >}}, cliquer des liens...
-<br>
 
 <span style="color:red;font-size:100%;font-family:verdana;">mariefrancoisrey</span>*<span style="color:red;font-size:100%;font-family:verdana;">@</span>*<span style="color:red;font-size:100%;font-family:verdana;">gmail.com</span> <br>
-<span style="color:red;font-size:100%;font-family:verdana;">06 02 03 98 04</span>
+<span style="color:red;font-size:100%;font-family:verdana;">06 02 03 98 04<br> rue de l'Atlantique 29920 NEVEZ</span>
 
-### [Téléchargez le calendrier des expos !](telechargement/calendrier-expos-Francoise-2025.pdf)<br><br>
+### [Téléchargez le calendrier des expos !](telechargement/calendrier-expos-Francoise-2025.pdf)<br>
 
 {{< figure
   title=""
