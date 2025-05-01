@@ -1,5 +1,5 @@
 # Settings  
-baseurl = "https://github.com/site_essai/"
+baseurl = "https://geheffe.github.io/catalogue/"
 languageCode = "fr"
 title = "Le catalogue de Francoise"
 theme = "autophugo"
@@ -18,9 +18,9 @@ disableKinds = ["taxonomy", "term"]
     keywords = "autophugo"
     #msvalidate = ""
     #googlesiteverification = ""
-    thumb_width = 480
+    thumb_width = 600
     thumb_quality = 60
-    full_width = 960
+    full_width = 1200
     full_quality = 80
     column_count = 2
     #breadcrumb_use_title = false
