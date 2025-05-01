@@ -16,6 +16,12 @@
 /*    box-shadow: 0 0 0 1px red;  Ligne de debug (à supprimer après) */
 }
 
+.infos-background {
+    background: #423737 url('../images/red-background.jpg') repeat;
+    min-height: 100vh;/*force le conteneur à occuper tout l'écran, rendant le fond visible même avec peu de contenu*/
+    width: 100%;
+}
+
 /* Réinitialisation des marges et padding */
 body {
     padding-top: 0 !important;

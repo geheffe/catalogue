@@ -1,10 +1,12 @@
 {{ define "main" }}
 <div class="container-infos">
+    <div class="infos-background">
         <div class="infos-list">
             {{ .Content }}
             {{ range .Pages }}
             <a href="{{ .Permalink }}">{{ .Title }}<br /><br /></a>
             {{ end }}
         </div>
+    </div>
 </div>
 {{ end }}
