@@ -1,6 +1,6 @@
 ---
 title: ""
-date: 2025-04-22T02:00:00+01:00
+date: 2025-04-22T01:00:00+01:00
 weight: 0
 albumthumb: "/catalogue/couverture.jpg"
 draft: false
@@ -11,18 +11,18 @@ draft: false
 resources:
 - src: "/catalogue/couverture.jpg"
   weight: 10
-- src: "/catalogue/page_1002.jpg"
-  weight: 30
-- src: "/catalogue/page_1008.jpg"
-  weight: 90
-- src: "/catalogue/page_1014.jpg"
-  weight: 150
-- src: "/catalogue/page_1020.jpg"
-  weight: 210
-- src: "/catalogue/page_1026.jpg"
-  weight: 270
-- src: "/catalogue/page_1032.jpg"
-  weight: 330
+- src: "/catalogue/page_1003.jpg"
+  weight: 40
+- src: "/catalogue/page_1009.jpg"
+  weight: 100
+- src: "/catalogue/page_1015.jpg"
+  weight: 160
+- src: "/catalogue/page_1021.jpg"
+  weight: 220
+- src: "/catalogue/page_1027.jpg"
+  weight: 280
+- src: "/catalogue/page_1033.jpg"
+  weight: 340
 - src: "/catalogue/page_1100.jpg"
   weight: 1000
 - src: "/catalogue/page_1101.jpg"

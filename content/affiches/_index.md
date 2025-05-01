@@ -1,6 +1,6 @@
 ---
 title: ""
-date: 2025-04-22T03:00:00+01:00
+date: 2025-04-22T02:00:00+01:00
 weight: 0
 albumthumb: "/affiches/chateauneuf_2025.jpg"
 draft: false

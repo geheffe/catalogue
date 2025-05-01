@@ -12,7 +12,11 @@ resources:
 - src: "/bienvenue/bienvenue_intro.jpg"
   weight: 10
 - src: "/bienvenue/billet_2.jpg"
+  weight: 60
+- src: "/bienvenue/billet_3.jpg"
   weight: 70
+- src: "/bienvenue/photos_temporaires.jpg"
+  weight: 75
 - src: "/bienvenue/billet_1.jpg"
   weight: 80
 - src: "/bienvenue/photos_1.jpg"
