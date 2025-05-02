@@ -2,13 +2,15 @@
 title: ""
 date: 2025-04-22T02:00:00+01:00
 weight: 0
-albumthumb: "/affiches/chateauneuf_2025.jpg"
+albumthumb: "/affiches/capcavalarts_2025_A5.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
 #  phototitle: A title for the photo
 #  description: A sub-title or description for the photo
 resources:
+- src: "/affiches/capcavalarts_2025_A5.jpg"
+  weight: 80
 - src: "/affiches/chateauneuf_2025.jpg"
   weight: 90
 - src: "/affiches/melgven_2025.jpg"
