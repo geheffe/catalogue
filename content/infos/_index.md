@@ -6,6 +6,7 @@ albumthumb: "/infos/infos.jpg"
 draft: false
 resources:
 ---
+<br>
 <center>
 
 <span  style="background-color:red; color:#ffd700; 

@@ -1,5 +1,39 @@
 <header id="header">
-    <h1>
+    <!-- Menu Hamburger -->
+    <!-- Menu Hamburger amélioré -->
+    <div class="menu-container">
+        <div class="hamburger-menu">☰</div>
+        <nav class="site-menu">
+            <ul>
+                {{ $menuItems := slice
+                    (dict "path" "" "name" "Accueil" "icon" "🏠")
+                    (dict "path" "bienvenue" "name" "Bienvenue" "icon" "🫶")
+                    (dict "path" "catalogue" "name" "Catalogue" "icon" "🎨")
+                    (dict "path" "affiches" "name" "Affiches" "icon" "🖼️") 
+                    (dict "path" "infos" "name" "Des infos" "icon" "📜" "submenu" (slice
+                        (dict "path" "infos/infos_p1" "name" "👉 Infos page n°1")
+                        (dict "path" "infos/infos_p2" "name" "👉 Infos page n°2")
+                        (dict "path" "infos/et_aussi" "name" "👉 ...et aussi")
+                    ))
+                    (dict "path" "pele_mele" "name" "Pêle-mêle" "icon" "🍂")
+                    (dict "path" "presentation" "name" "Présentation" "icon" "🧚🏻")
+                }}
+                {{ range $menuItems }}
+    <li class="{{ if .submenu }}has-submenu{{ end }}">
+    <a href="{{ .path | relURL }}" class="main-link">{{ .name }}<span class="icon-space"> </span>{{ .icon }}</a> <!-- Ajout de classe -->
+    {{ if .submenu }}
+    <ul class="submenu">
+        {{ range .submenu }}
+        <li><a href="{{ .path | relURL }}">{{ .name }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</li>
+{{ end }}
+            </ul>
+        </nav>
+    </div>
+    
 
     <!-- Grab the base URL, pull out the path, then count directories -->
     {{- $base_url_parsed := urls.Parse .Site.BaseURL -}}
@@ -37,3 +71,142 @@
     </h1>
     {{ partial "navigation.html" . }}
 </header>
+
+<style>
+/* Styles améliorés pour le thème sombre */
+.menu-container {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.hamburger-menu {
+    /* Carré parfait */
+    width: 40px;
+    height: 40px;
+    /* Centrage du symbole ☰ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Styles visuels */
+    font-size: 26px;
+    background: rgba(0,0,0,0.8);
+    color: #FFD700;
+    border: 2px solid rgba(255,215,0,0.4);
+    border-radius: 12px;
+    /* Animation */
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255,215,0,0.3);
+}
+
+.site-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: 
+        /* URL de l'image */
+        url('{{ "images/red-background.jpg" | relURL }}') 
+        /* Répétition et positionnement */
+        repeat center center !important;
+    border: 3px solid rgba(255, 215, 0, 0.3) !important; /* Bordure or */
+    padding: 15px 0; /* Plus d'espace vertical */
+    min-width: 250px; /* Largeur augmentée (était 200px) */
+    width: auto; /* S'adapte au contenu */
+    border-radius: 20px; /* Coins plus arrondis */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    --menu-text-color: #FFD700; /* Or */
+    --menu-text-transform: none; /* Annule les majuscules */
+}
+
+.site-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-menu li {
+    padding: 8px 15px !important; /* Réduit l'espacement horizontal */
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    transition: transform 0.3s;
+}
+
+.site-menu li:hover {
+    transform: translateX(5px);
+}
+
+.site-menu li:last-child {
+    border-bottom: none;
+}
+
+
+.site-menu a {
+    color: var(--menu-text-color) !important;
+    text-transform: var(--menu-text-transform) !important;
+    font-size: 1.2rem !important;
+    letter-spacing: normal !important;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: block;
+    letter-spacing: 0.5px; /* Espacement général */
+}
+
+.site-menu a:hover {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+.site-menu.show {
+    display: block;
+}
+
+.icon-space {
+    display: inline-block;
+    width: 10px;
+}
+
+/* Sous-menu stylisé */
+.site-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: max-content;
+    width: 100%;
+    background: 
+        /* URL de l'image */
+        url('{{ "images/red-background.jpg" | relURL }}') 
+        /* Répétition et positionnement */
+        repeat center center !important;
+    border: 2px solid rgba(255,215,0,0.3);
+    border-radius: 0 0 15px 15px;
+    padding: 5px 0;
+    z-index: 1001;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.site-menu li.has-submenu:hover > .submenu {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+  
+@media (max-width: 768px) {
+    .site-menu .submenu {
+        position: static;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+}
+  
+</style>
+
