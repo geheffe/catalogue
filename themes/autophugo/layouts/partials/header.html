@@ -33,6 +33,7 @@
 {{ end }}
             </ul>
         </nav>
+        <div class="close-menu" style="display:none;">✕</div> <!-- Croix cachée par défaut -->
     </div>
     
 
@@ -214,6 +215,34 @@
         padding: 0 10px; /* Zone cliquable */
         font-size: 1.2rem;/* 0.9em */
     }
+    .site-menu a {
+        font-size: 2.2rem !important; /* Augmentation */
+        line-height: 1.5 !important;
+        padding: 12px 20px !important; /* Meilleure aération */
+    }
+    .submenu a {
+        font-size: 2rem !important; /* Légèrement plus petit */
+    }
+    .site-menu li.has-submenu.opened > a::after {
+        color: white !important;
+        transform: translateY(-50%) rotate(180deg);
+    }
+}
+
+
+.close-menu {
+    position: fixed; /* Reste en place au scroll */
+    top: 25px;
+    right: 25px;
+    color: #FFD700;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1002;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: opacity 0.3s;
+}
+.close-menu:hover {
+    opacity: 0.8;
 }
   
 </style>

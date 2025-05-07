@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.site-menu');
+    // Gestion de la croix
+    const closeBtn = document.querySelector('.close-menu');
     
     hamburger.addEventListener('click', function(e) {
         e.stopPropagation();
@@ -15,6 +17,29 @@ document.addEventListener('DOMContentLoaded', function() {
     menu.addEventListener('click', function(e) {
         e.stopPropagation();
     });
+    
+    // Ouvre le menu + montre la croix
+    document.querySelector('.hamburger-menu').addEventListener('click', function(e) {
+        e.stopPropagation();
+        menu.classList.add('show');
+        closeBtn.style.display = 'block';
+    });
+
+    // Ferme le menu + cache la croix
+    closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        menu.classList.remove('show');
+        this.style.display = 'none';
+    });
+
+    // Fermeture en cliquant ailleurs
+    document.addEventListener('click', function(e) {
+        if (!menu.contains(e.target) && e.target !== closeBtn) {
+            menu.classList.remove('show');
+            closeBtn.style.display = 'none';
+        }
+    });
+    
 });
 
 // Version simplifiée et garantie
