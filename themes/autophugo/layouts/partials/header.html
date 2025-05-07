@@ -124,6 +124,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.6);
     --menu-text-color: #FFD700; /* Or */
     --menu-text-transform: none; /* Annule les majuscules */
+    font-family: 'Brush Script MT', cursive;
 }
 
 .site-menu ul {
@@ -151,7 +152,7 @@
 .site-menu a {
     color: var(--menu-text-color) !important;
     text-transform: var(--menu-text-transform) !important;
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
     letter-spacing: normal !important;
     text-decoration: none;
     transition: color 0.2s;
@@ -172,80 +173,72 @@
     display: inline-block;
     width: 15px;
 }
-
-/* Sous-menu stylisé */
+/*****************************************************/
+/* Sous-menu - Version corrigée */
 .site-menu .submenu {
     display: none;
     position: absolute;
     left: 0;
     top: 100%;
-    min-width: max-content;
-    width: 100%;
-    background: 
-        /* URL de l'image */
-        url('{{ "images/red-background.jpg" | relURL }}') 
-        /* Répétition et positionnement */
-        repeat center center !important;
+    min-width: 100%; /* Largeur égale au parent */
+    background: url('{{ "images/red-background.jpg" | relURL }}') repeat center center !important;
     border: 2px solid rgba(255,215,0,0.3);
     border-radius: 0 0 15px 15px;
     padding: 5px 0;
     z-index: 1001;
-    animation: fadeIn 0.3s ease-out;
+    /* Suppression de l'animation ici (gérée en mobile seulement) */
 }
 
+/* Desktop : survol */
 .site-menu li.has-submenu:hover > .submenu {
     display: block;
+}
+
+/* Mobile spécifique */
+@media (max-width: 768px) {
+    .site-menu li.has-submenu > a {
+        position: relative;
+        padding-right: 40px !important; /* Espace pour la flèche */
+    }
+    
+    .site-menu li.has-submenu > a::after {
+        content: " ▼";
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFD700;
+        font-size: 1rem;
+        transition: all 0.3s;
+    }
+    
+    .site-menu li.has-submenu.opened > a::after {
+        content: " ▲";
+        color: white !important;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    
+    .submenu.mobile-show {
+        display: block !important;
+        position: relative; /* Pour mobile */
+        animation: fadeIn 0.3s;
+        top: 0;
+        left: 0;
+    }
+    
+    /* Optimisation tactile */
+    .site-menu a {
+        font-size: 2.2rem !important;
+        padding: 12px 25px !important; /* Zone cliquable agrandie */
+        touch-action: manipulation; /* Améliore la réactivité */
+    }
 }
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-5px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-/* Règles critiques */
-.site-menu.show {
-    display: block !important;
-}
-
-/* Solution définitive - Mobile seulement */
-@media (max-width: 768px) {
-    .mobile-arrow {
-        display: inline-block;
-        margin-left: 30px !important; /* Espace fixe */
-        padding: 0 10px; /* Zone cliquable */
-        font-size: 1.2rem;/* 0.9em */
-    }
-    .site-menu a {
-        font-size: 2.2rem !important; /* Augmentation */
-        line-height: 1.5 !important;
-        padding: 12px 20px !important; /* Meilleure aération */
-    }
-    .submenu a {
-        font-size: 2rem !important; /* Légèrement plus petit */
-    }
-  
-    .site-menu li.has-submenu > a::after {
-        content: " ▼";
-        display: inline-block;
-        margin-left: 10px;
-        color: #FFD700;
-        font-size: 0.9em;
-        transition: all 0.3s;
-    }
-    
-    .site-menu li.has-submenu.opened > a::after {
-        content: " ▲";
-        color: white;
-        transform: translateY(-50%) rotate(180deg);
-    }
-    
-    .submenu.mobile-show {
-        display: block !important;
-    }
-    
-}
-
-
+/*****************************************************/
 .close-menu {
     position: fixed; /* Reste en place au scroll */
     top: 25px;
