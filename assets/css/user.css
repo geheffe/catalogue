@@ -2,8 +2,10 @@
 
 .site-menu {
     font-family: 'Brush Script MT', cursive;
-}.site-menu {
-    font-family: 'Brush Script MT', cursive;
+}
+
+.site-menu li.has-submenu.opened::after {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 /****************** Cadrage des pages infos *************************/

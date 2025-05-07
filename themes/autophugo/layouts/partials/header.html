@@ -11,6 +11,7 @@
                     (dict "path" "catalogue" "name" "Catalogue" "icon" "🎨")
                     (dict "path" "affiches" "name" "Affiches" "icon" "🖼️") 
                     (dict "path" "infos" "name" "Des infos" "icon" "📜" "submenu" (slice
+                        (dict "path" "infos" "name" "🫱 Infos accueil")
                         (dict "path" "infos/infos_p1" "name" "👉 Infos page n°1")
                         (dict "path" "infos/infos_p2" "name" "👉 Infos page n°2")
                         (dict "path" "infos/et_aussi" "name" "👉 ...et aussi")
@@ -90,7 +91,7 @@
     justify-content: center;
     align-items: center;
     /* Styles visuels */
-    font-size: 26px;
+    font-size: 24px;
     background: rgba(0,0,0,0.8);
     color: #FFD700;
     border: 2px solid rgba(255,215,0,0.4);
@@ -168,7 +169,7 @@
 
 .icon-space {
     display: inline-block;
-    width: 10px;
+    width: 15px;
 }
 
 /* Sous-menu stylisé */
@@ -199,12 +200,19 @@
     from { opacity: 0; transform: translateY(-5px); }
     to { opacity: 1; transform: translateY(0); }
 }
-  
+
+/* Règles critiques */
+.site-menu.show {
+    display: block !important;
+}
+
+/* Solution définitive - Mobile seulement */
 @media (max-width: 768px) {
-    .site-menu .submenu {
-        position: static;
-        border-radius: 10px;
-        margin-top: 5px;
+    .mobile-arrow {
+        display: inline-block;
+        margin-left: 30px !important; /* Espace fixe */
+        padding: 0 10px; /* Zone cliquable */
+        font-size: 1.1em;/* 0.9em */
     }
 }
   

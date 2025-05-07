@@ -16,4 +16,49 @@ document.addEventListener('DOMContentLoaded', function() {
         e.stopPropagation();
     });
 });
+
+// Version simplifiée et garantie
+function setupMenu() {
+    // 1. Gestion du menu hamburger
+    const hamburger = document.querySelector('.hamburger-menu');
+    const menu = document.querySelector('.site-menu');
+    
+    if (!hamburger || !menu) return; // Sécurité
+
+    hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        menu.classList.toggle('show');
+    });
+
+    // 2. Gestion des sous-menus mobile
+    document.querySelectorAll('.site-menu li.has-submenu > a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const submenu = this.nextElementSibling;
+                submenu.classList.toggle('show');
+            }
+        });
+    });
+
+    // 3. Fermeture au clic extérieur
+    document.addEventListener('click', function() {
+        menu.classList.remove('show');
+        document.querySelectorAll('.submenu').forEach(s => s.classList.remove('show'));
+    });
+}
+
+// Double sécurité
+document.addEventListener('DOMContentLoaded', setupMenu);
+window.addEventListener('load', setupMenu);
+
+// Ajoutez ceci dans menu_hamburger.html
+// Version épurée
+document.querySelectorAll('.site-menu li.has-submenu').forEach(item => {
+    const arrow = document.createElement('span');
+    arrow.className = 'mobile-arrow';
+    arrow.innerHTML = ' ▼';
+    item.querySelector('a').appendChild(arrow);
+});
+
 </script>
