@@ -58,24 +58,27 @@ function setupMenu() {
     document.querySelectorAll('.site-menu li.has-submenu').forEach(item => {
     const link = item.querySelector('a');
  
- 
- 
     
     link.addEventListener('click', function(e) {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        const wasOpen = submenu.classList.contains('mobile-show');
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const submenu = item.querySelector('.submenu');
+            const isOpen = submenu.classList.contains('mobile-show');
+            
+            // Ferme tous les sous-menus
+            document.querySelectorAll('.submenu').forEach(s => s.classList.remove('mobile-show'));
+            
+            // Ouvre/ferme seulement si c'était fermé
+            if (!isOpen) {
+                submenu.classList.add('mobile-show');
+                item.classList.add('opened');
+            } else {
+                item.classList.remove('opened');
+            }
+        }
+    });
+    
         
-        // Ferme tout
-        document.querySelectorAll('.submenu').forEach(s => s.classList.remove('mobile-show'));
-        
-        // Ouvre seulement si c'était fermé
-        if (!wasOpen) submenu.classList.add('mobile-show');
-       }
-     });
-    
-    
-    
 });
 
     // 3. Fermeture au clic extérieur
