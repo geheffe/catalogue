@@ -63,20 +63,10 @@ function setupMenu() {
         if (window.innerWidth <= 768) {
             e.preventDefault();
             const submenu = item.querySelector('.submenu');
-            const isOpen = submenu.classList.contains('mobile-show');
-            
-            // Ferme tous les sous-menus
-            document.querySelectorAll('.submenu').forEach(s => s.classList.remove('mobile-show'));
-            
-            // Ouvre/ferme seulement si c'était fermé
-            if (!isOpen) {
-                submenu.classList.add('mobile-show');
-                item.classList.add('opened');
-            } else {
-                item.classList.remove('opened');
-            }
+            const isOpen = submenu.classList.toggle('mobile-show');
+           item.classList.toggle('opened', isOpen);
         }
-    });
+     });
     
         
 });
