@@ -1,5 +1,5 @@
 <header id="header">
-    <!-- Menu Hamburger -->
+
     <!-- Menu Hamburger amélioré -->
     <div class="menu-container">
         <div class="hamburger-menu">☰</div>
@@ -21,7 +21,10 @@
                 }}
                 {{ range $menuItems }}
     <li class="{{ if .submenu }}has-submenu{{ end }}">
-    <a href="{{ .path | relURL }}" class="main-link">{{ .name }}<span class="icon-space"> </span>{{ .icon }}</a> <!-- Ajout de classe -->
+    <a href="{{ .path | relURL }}" class="main-link">
+    <span class="icon-space">{{ .icon }}</span> <!-- Icône en premier -->
+    <span>{{ .name }}</span> <!-- Texte ensuite -->
+    </a>
     {{ if .submenu }}
     <ul class="submenu">
         {{ range .submenu }}
@@ -74,185 +77,4 @@
     {{ partial "navigation.html" . }}
 </header>
 
-<style>
-/* Styles améliorés pour le thème sombre */
-.menu-container {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    z-index: 1000;
-}
-
-.hamburger-menu {
-    /* Carré parfait */
-    width: 40px;
-    height: 40px;
-    /* Centrage du symbole ☰ */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Styles visuels */
-    font-size: 24px;
-    background: rgba(0,0,0,0.8);
-    color: #FFD700;
-    border: 2px solid rgba(255,215,0,0.4);
-    border-radius: 12px;
-    /* Animation */
-    transition: all 0.3s ease;
-}
-
-.hamburger-menu:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(255,215,0,0.3);
-}
-
-.site-menu {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    background: 
-        /* URL de l'image */
-        url('{{ "images/red-background.jpg" | relURL }}') 
-        /* Répétition et positionnement */
-        repeat center center !important;
-    border: 3px solid rgba(255, 215, 0, 0.3) !important; /* Bordure or */
-    padding: 15px 0; /* Plus d'espace vertical */
-    min-width: 250px; /* Largeur augmentée (était 200px) */
-    width: auto; /* S'adapte au contenu */
-    border-radius: 20px; /* Coins plus arrondis */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
-    --menu-text-color: #FFD700; /* Or */
-    --menu-text-transform: none; /* Annule les majuscules */
-    font-family: 'Brush Script MT', cursive;
-}
-
-.site-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.site-menu li {
-    padding: 8px 15px !important; /* Réduit l'espacement horizontal */
-    white-space: nowrap;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    transition: transform 0.3s;
-}
-
-.site-menu li:hover {
-    transform: translateX(5px);
-}
-
-.site-menu li:last-child {
-    border-bottom: none;
-}
-
-
-.site-menu a {
-    color: var(--menu-text-color) !important;
-    text-transform: var(--menu-text-transform) !important;
-    font-size: 1.5rem !important;
-    letter-spacing: normal !important;
-    text-decoration: none;
-    transition: color 0.2s;
-    display: block;
-    letter-spacing: 0.5px; /* Espacement général */
-}
-
-.site-menu a:hover {
-    color: #4fc3f7;
-    text-decoration: none;
-}
-
-.site-menu.show {
-    display: block;
-}
-
-.icon-space {
-    display: inline-block;
-    width: 15px;
-}
-/*****************************************************/
-/* Sous-menu - Version corrigée */
-.site-menu .submenu {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    min-width: 100%; /* Largeur égale au parent */
-    background: url('{{ "images/red-background.jpg" | relURL }}') repeat center center !important;
-    border: 2px solid rgba(255,215,0,0.3);
-    border-radius: 0 0 15px 15px;
-    padding: 5px 0;
-    z-index: 1001;
-    /* Suppression de l'animation ici (gérée en mobile seulement) */
-}
-
-/* Desktop : survol */
-.site-menu li.has-submenu:hover > .submenu {
-    display: block;
-}
-
-/* Mobile spécifique */
-@media (max-width: 768px) {
-    .site-menu li.has-submenu > a {
-        position: relative;
-        padding-right: 40px !important; /* Espace pour la flèche */
-    }
-    
-    .site-menu li.has-submenu > a::after {
-        content: " ▼";
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #FFD700;
-        font-size: 1rem;
-        transition: all 0.3s;
-    }
-    
-    .site-menu li.has-submenu.opened > a::after {
-        content: " ▲";
-        color: white !important;
-        transform: translateY(-50%) rotate(180deg);
-    }
-    
-    .submenu.mobile-show {
-        display: block !important;
-        position: relative; /* Pour mobile */
-        animation: fadeIn 0.3s;
-        top: 0;
-        left: 0;
-    }
-    
-    /* Optimisation tactile */
-    .site-menu a {
-        font-size: 1.5rem !important;
-        padding: 12px 25px !important; /* Zone cliquable agrandie */
-        touch-action: manipulation; /* Améliore la réactivité */
-    }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-/*****************************************************/
-.close-menu {
-    position: fixed; /* Reste en place au scroll */
-    top: 25px;
-    right: 25px;
-    color: #FFD700;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 1002;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-    transition: opacity 0.3s;
-}
-.close-menu:hover {
-    opacity: 0.8;
-}
-  
-</style>
 

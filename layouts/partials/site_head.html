@@ -1,5 +1,77 @@
 <!-- Override this file in your site's layout to embed custom content in HEAD -->
 <script>
+/////////////////////////\\\\\\\  Menu   \\\\\\\///////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const menu = document.querySelector('.site-menu');
+    const closeBtn = document.querySelector('.close-menu');
+    
+    // Gestion du menu hamburger
+    hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        menu.classList.toggle('show');
+        closeBtn.style.display = menu.classList.contains('show') ? 'block' : 'none';
+    });
+    
+    // Gestion de la fermeture
+    closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        menu.classList.remove('show');
+        this.style.display = 'none';
+    });
+
+
+
+
+
+    
+    // Gestion des sous-menus mobile
+    document.querySelectorAll('.site-menu li.has-submenu > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const parentLi = this.parentElement;
+            const submenu = parentLi.querySelector('.submenu');
+            const wasOpen = parentLi.classList.contains('opened');
+            
+            // Fermer tous les autres sous-menus d'abord
+            document.querySelectorAll('.site-menu li.has-submenu').forEach(li => {
+                if (li !== parentLi) {
+                    li.classList.remove('opened');
+                    li.querySelector('.submenu')?.classList.remove('mobile-show');
+                }
+            });
+            
+            // Basculer l'état actuel
+            if (wasOpen) {
+                // Fermer si déjà ouvert
+                parentLi.classList.remove('opened');
+                submenu.classList.remove('mobile-show');
+            } else {
+                // Ouvrir si fermé
+                parentLi.classList.add('opened');
+                submenu.classList.add('mobile-show');
+            }
+            
+            // Debug
+            console.log('État du menu:', {
+                élément: parentLi,
+                ouvert: parentLi.classList.contains('opened'),
+                sousMenuVisible: submenu.classList.contains('mobile-show')
+            });
+        }
+    });
+});
+      
+    
+    
+});
+
+
+/////////////////////////\\\\\  fin de Menu  \\\///////////////////////////////////
+
+/////////////////////////\\\\\\ Zoom      \\\\\\///////////////////////////////////
 if ('ontouchstart' in window) {
     document.querySelectorAll('.mfp-img').forEach(img => {
         img.style.touchAction = 'manipulation';
