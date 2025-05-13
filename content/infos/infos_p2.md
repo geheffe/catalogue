@@ -12,7 +12,7 @@ resources:
 
 |              | 
 |      ---     |
-|[Parcours d'artistes &amp; Street Art Gouesn'Art (PDF)](telechargement/guide_mai_2025_Gouesnach.pdf)|
+|[Parcours d&rsquo;artistes&nbsp;&amp;&nbsp;Street Art Gouesn&rsquo;Art (PDF)](telechargement/guide_mai_2025_Gouesnach.pdf)|
 |<span style="text-decoration: underline;">Pour revenir en arrière</span>... : Plutôt que d'utiliser le retour en arrière de votre navigateur ce qui vous ferait parcourir tous les méandres de votre navigation, par exemple si vous êtes sur la page n°2 des infos, cliquez sur <span style="color:white;font-style: normal;font-size:100%;font-family:verdana;">Infos</span> pour revenir sur la page  <span  style="background-color:red; color:#ffd700;font-size:100%;font-style: normal;font-family:verdana;">INFOS - accueil</span> ou cliquez sur <span style="color:white;font-style: normal;font-size:100%;font-family:verdana;">Le catalogue de Francoise </span> pour revenir sur la première page du site.<br>En haut de la page vous trouverez :  <span style="color:white;font-style: normal;font-size:100%;font-family:verdana;">Le catalogue de Francoise / Infos / </span><span style="color:#696969;font-style: normal;font-size:100%;font-family:verdana;">Infos p2</span> <br>En plus, vous disposez maintenant d'un menu &ldquo;hamburger&rdquo; aussi avez-vous le choix pour vous promener !  |
 
 
