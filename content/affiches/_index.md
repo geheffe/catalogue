@@ -2,7 +2,7 @@
 title: ""
 date: 2025-04-22T02:00:00+01:00
 weight: 0
-albumthumb: "/affiches/gouesnach_2025.jpg"
+albumthumb: "/images/affiche_Gouesn_Art-page001.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
