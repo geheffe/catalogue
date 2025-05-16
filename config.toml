@@ -10,7 +10,7 @@ disableKinds = ["taxonomy", "term"]
 
 [services]
     [services.googleAnalytics]
-        #ID = 'G-MEASUREMENT_ID'
+        ID = 'G-T2GZF6D03D'
 
 [params]
     # Meta
