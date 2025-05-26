@@ -1,6 +1,7 @@
 ---
 title: "INFOS page n°2" 
 date: 2025-01-29T15:37:09+01:00
+weight: 120
 albumthumb: ""
 draft: false
 resources:

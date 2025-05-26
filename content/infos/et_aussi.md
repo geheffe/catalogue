@@ -1,7 +1,7 @@
 ---
 title: "... et aussi :"
 date: 2025-01-25T17:03:14+02:00
-weight: 0
+weight: 130
 albumthumb: ""
 draft: false
 ## Optional additional meta info for resources list
@@ -37,4 +37,7 @@ resources:
 |              | 
 |      --:     |
 | [site propulsé par HUGO](https://gohugo.io/)|
+|Galerie de photos concoctées avec le GIMP, Scribus, ImageMagick, sous Fedora|
+|&copy; Françoise BOTREL REY |
+
 <br>

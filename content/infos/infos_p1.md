@@ -1,6 +1,7 @@
 ---
 title: "INFOS page n°1 : Cliquez pour rentrer !"
 date: 2025-02-07T16:13:19+01:00
+weight: 110
 albumthumb: ""
 draft: false
 resources:
