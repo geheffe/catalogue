@@ -1,5 +1,65 @@
 /* Override this by placing your own custom "user.css" in your "assets/css" directory.  When you do, this file will automatically be ignored! */
 
+/******************** modification position chevrons  **********************/
+
+
+/******************** modification tri des vignettes  ***********************/
+/* Conteneur principal */
+.flexrow {
+    display: flex;
+    gap: 5px; /* Espace entre colonnes */
+}
+
+/* Colonnes */
+.flexcol {
+    flex: 1; /* Chaque colonne prend moitié de l'espace */
+    min-width: 0; /* Essential pour éviter les débordements */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espace entre vignettes */
+}
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+    .flexrow {
+        flex-wrap: wrap;
+    }
+    .flexcol {
+        flex: 1 1 calc(50% - 3px); /* 50% - moitié du gap */
+    }
+}
+
+/* Optimisation des images */
+.thumb img {
+    width: 100%; /* Prend toute la largeur disponible */
+    height: auto; /* Maintient les proportions */
+    display: block;
+}
+
+/******************** modification titre vignette  ***************************/
+#main .thumb > h2 {
+    position: absolute; /* Titre superposé */
+    bottom: -0.2em; /* Déplace sous la vignette sans prendre d'espace */
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0.1em 0;
+    font-size: 1.5em;
+    color: #ffd700;
+    background: rgba(36, 38, 41, 0.8); /* Fond semi-transparent */
+    text-align: center;
+    z-index: 2; /* Garantit que le titre est au-dessus des autres éléments si nécessaire */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+@media screen and (max-width: 768px) {
+    #main .thumb > h2 {
+        font-size: 1.1em; /* Taille réduite sur tablette */
+        margin-top: 0.1em; /* Espacement minimal */
+        padding: 0.1em 0; /* Ajustement pour tablette */
+        bottom: -0.1em; /* Position légèrement remontée */
+    }
+}
+
 /******************** Menu & sous-menu   ***************************/
 /* Styles améliorés pour le thème sombre */
 

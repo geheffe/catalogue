@@ -1,7 +1,7 @@
 # Settings  
 baseurl = "https://geheffe.github.io/catalogue/"
 languageCode = "fr"
-title = "Le catalogue de Francoise"
+title = "Le catalogue de Françoise"
 theme = "autophugo"
 disableKinds = ["taxonomy", "term"]
 #[taxonomies]
@@ -11,7 +11,6 @@ disableKinds = ["taxonomy", "term"]
 [services]
     [services.googleAnalytics]
         ID = 'G-T2GZF6D03D'
-
 [params]
     # Meta
     description = "Catalogue de Francoise"

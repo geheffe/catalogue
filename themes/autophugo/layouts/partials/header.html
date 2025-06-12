@@ -9,7 +9,10 @@
                     (dict "path" "" "name" "Accueil" "icon" "🏠")
                     (dict "path" "bienvenue" "name" "Bienvenue" "icon" "🫶")
                     (dict "path" "catalogue" "name" "Catalogue" "icon" "🎨")
-                    (dict "path" "affiches" "name" "Affiches" "icon" "🖼️") 
+                    (dict "path" "affiches" "name" "Affiches" "icon" "🖼️" "submenu" (slice
+                        (dict "path" "affiches/2025" "name" "👉 2025")
+                        (dict "path" "affiches/2024" "name" "👉 2024")
+                    ))    
                     (dict "path" "infos" "name" "Des infos" "icon" "📜" "submenu" (slice
                         (dict "path" "infos" "name" "🫱 Infos accueil")
                         (dict "path" "infos/infos_p1" "name" "👉 Infos page n°1")
@@ -67,10 +70,12 @@
     {{- if gt $use_part_cnt 0 -}}
         {{- range $cur_ind, $element := first (sub $use_part_cnt 1) $url_parts -}}
             {{- $path := string (delimit (first (add $cur_ind 1) $url_parts) "/") -}}
-            {{- $part := $element | humanize }}
+            {{- $cleaned_element := $element | replaceRE "_" " " -}}
+{{- $part := cond (findRE "^[0-9]{4}$" $cleaned_element) $cleaned_element ($cleaned_element | title) -}}
             / <a href="{{ $.Site.BaseURL }}{{ $path }}"><strong>{{ cond $crumb_is_title ((($.Site.GetPage $path).Title) | default $part) $part }}</strong></a>
         {{- end -}}
-        {{- $cur_part := (index $url_parts (sub $use_part_cnt 1)) | humanize }}
+        {{- $last_part := (index $url_parts (sub $use_part_cnt 1)) | replaceRE "_" " " -}}
+{{- $cur_part := cond (findRE "^[0-9]{4}$" $last_part) $last_part ($last_part | title) -}}
         / {{ cond $crumb_is_title (.Title | default $cur_part) $cur_part }}
     {{- end }}
     </h1>
