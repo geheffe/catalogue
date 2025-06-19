@@ -2,6 +2,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="keywords" content="{{ with .Site.Params.keywords }}{{ . }}{{ end }}">
 
+<!-- Balises Open Graph pour Telegram/Facebook -->
+<!-- Override manuel -->
+<meta property="og:image" content="{{ "images/vignette_apercu.jpg" | absURL }}" />
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:title" content="Ma peinture à l'huile" />
+<meta property="og:description" content="Champ spirituel en couleurs !" />
+<meta property="og:url" content="https://geheffe.github.io/catalogue/" />
+
 {{ $description := $.Param "description" }}
 {{- with $description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ $author := .Params.author.name | default .Site.Params.author.name }}
