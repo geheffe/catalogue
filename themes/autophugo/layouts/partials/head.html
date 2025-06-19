@@ -4,7 +4,8 @@
 
 <!-- Balises Open Graph pour Telegram/Facebook -->
 <!-- Override manuel -->
-<meta property="og:image" content="{{ "images/vignette_apercu.jpg" | absURL }}" />
+{{ $vignette := resources.Get "images/vignette_apercu.jpg" | fingerprint }}
+<meta property="og:image" content="{{ $vignette.Permalink }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:title" content="Ma peinture à l'huile" />
