@@ -2,7 +2,7 @@
 title: ""
 date: 2025-04-22T02:00:00+01:00
 weight: 30
-albumthumb: "/affiches/2025/capcavalarts_2025_A5.jpg"
+albumthumb: "/affiches/2025/Francoise_Botrel_Rey_Etuve_A5_2025.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
