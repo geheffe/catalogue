@@ -13,7 +13,7 @@ resources:
   weight: 10
 - src: "/affiches/2024/expo_collective_etuve.jpg"
   weight: 20
-- src: "/affiches/2024/affiche_penty.jpg"
+- src: "/affiches/2024/penty.jpg"
   weight: 30
 - src: "/affiches/2024/doelan_2024.jpg"
   weight: 40
