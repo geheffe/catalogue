@@ -11,6 +11,8 @@ draft: false
 resources:
 - src: "/bienvenue/bienvenue_intro.jpg"
   weight: 10
+- src: "/bienvenue/photos_Etuve.jpg"
+  weight: 73
 - src: "/bienvenue/photos_capcavalarts.jpg"
   weight: 74
 - src: "/bienvenue/photos_gouesnach.jpg"
