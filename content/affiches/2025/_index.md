@@ -10,21 +10,21 @@ draft: false
 #  description: A sub-title or description for the photo
 resources:
 - src: "/affiches/2025/affiche-brocart-2025.jpg"
-  weight: 72
-- src: "/affiches/2025/Francoise_Botrel_Rey_Etuve_A5_2025.jpg"
-  weight: 80
+  weight: 60
 - src: "/affiches/2025/Cabellou_2025_A5.jpg"
-  weight: 73
+  weight: 65
 - src: "/affiches/2025/Ste_Marine_2025_A5.jpg"
-  weight: 78
+  weight: 70
 - src: "/affiches/2025/Ste_Marine_2025_TV.jpg"
-  weight: 79
+  weight: 75
+- src: "/affiches/2025/Francoise_Botrel_Rey_Etuve_A5_2025.jpg"
+  weight: 77
 - src: "/affiches/2025/capcavalarts_2025_A5.jpg"
-  weight: 83
+  weight: 84
 - src: "/affiches/2025/gouesnach_2025.jpg"
-  weight: 85
+  weight: 95
 - src: "/affiches/2025/chateauneuf_2025.jpg"
-  weight: 90
-- src: "/affiches/2025/melgven_2025.jpg"
   weight: 100
+- src: "/affiches/2025/melgven_2025.jpg"
+  weight: 105
 ---

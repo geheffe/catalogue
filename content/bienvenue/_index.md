@@ -18,15 +18,15 @@ resources:
 - src: "/bienvenue/photos_gouesnach.jpg"
   weight: 75 
 - src: "/bienvenue/billet_2.jpg"
-  weight: 60
+  weight: 65
 - src: "/bienvenue/billet_3.jpg"
   weight: 70
 - src: "/bienvenue/photos_temporaires.jpg"
-  weight: 77
+  weight: 78
 - src: "/bienvenue/billet_1.jpg"
-  weight: 80
+  weight: 81
 - src: "/bienvenue/photos_1.jpg"
   weight: 90
 - src: "/bienvenue/photos_2.jpg"
-  weight: 100
+  weight: 95
 ---

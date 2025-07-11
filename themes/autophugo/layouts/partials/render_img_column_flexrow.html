@@ -1,59 +1,21 @@
-{{- /* Version simplifiée avec ordre séquentiel strict */}}
+{{- /* Conteneur principal - NE PAS MODIFIER LA LOGIQUE DES COLONNES */ -}}
 <div class="flexrow">
-    {{- $column_count := default 2 ($.Param "column_count") }}
-    {{- $downloadable := default true ($.Param "images_downloadable") }}
-    {{- $orig_download := default false ($.Param "images_downloadable_use_orig") }}
-    {{- $content := $.Scratch.Get "content" }}
+    {{- $column_count := 2 -}}
+    {{- $content := $.Scratch.Get "content" -}}
+    {{- $params := dict 
+        "downloadable" false
+        "orig_download" false
+        "show_taxonomies" (default false ($.Param "taxonomies_links"))
+    -}}
 
-    {{- /* Crée les colonnes */}}
-    {{- range $column_ind := seq $column_count }}
+    {{- /* Colonnes */ -}}
+    {{- range $col := seq $column_count -}}
         <div class="flexcol">
-        {{- range $idx, $elem := $content }}
-            {{- if eq (mod $idx $column_count) (sub $column_ind 1) }}
-                {{- $reind_val := merge $elem (dict "index" $idx) }}
-                {{- $filename := path.Base $elem.image.Name }}
-                
-                <article class="thumb">
-                    {{- if (eq $elem.type "link") }}
-                        <a href="{{ $elem.link }}" class="link" tabindex="0">
-                            <img src="{{ $elem.thumb.RelPermalink }}" alt="{{ $elem.title }}">
-                        </a>
-                        <h2>{{ $elem.title }}</h2>
-                    {{- else }}
-                        <a class="gallery-item" phototitle="{{ $elem.phototitle }}"
-                                {{ printf "description='%s'" ($elem.description | markdownify) | safeHTMLAttr }}
-                                gallery_index="{{ $idx }}"
-                                id="{{ md5 $filename }}"
-                                downloadable="{{ cond $downloadable "true" "false" }}"
-                                {{- if $downloadable }}
-                                download_file="{{ (cond $orig_download $elem.orig $elem.full).RelPermalink }}"
-                                {{- end }}
-                                orig_name="{{ $filename }}"
-                                href="{{ $elem.full.RelPermalink }}">
-                            <div id="image_number_{{ $idx }}" class="gallery-item-marker"></div>
-                            <img src="{{ $elem.thumb.RelPermalink }}"
-                                {{- with $elem.alt }} alt="{{ . }}"{{ end }}>
-                            {{- with $elem.description }}
-                            <div class="invis_desc">{{ (. | markdownify) | safeHTMLAttr }}</div>
-                            {{- end }}
-                        </a>
-                        {{- if (default false ($.Param "taxonomies_links")) }}
-                            <div class="caption_tax">
-                                {{- range $taxname, $terms := $elem.taxonomies }}
-                                    {{- range $terms }}
-                                        <div class="tax_term">
-                                            {{- $url := ( printf "/%s/#%s" ($taxname | urlize) ( . | urlize ) ) | relURL }}
-                                            <a href="{{ $url }}">{{ . | humanize }}</a>
-                                        </div>
-                                    {{- end }}
-                                {{- end }}
-                            </div>
-                        {{- end }}
-                        <h2>{{ $elem.phototitle }}</h2>
-                    {{- end }}
-                </article>
-            {{- end }}
-        {{- end }}
+            {{- range $elem := $content -}}
+                {{- if eq (mod (int $elem.weight) $column_count) (sub $col 1) -}}
+                    {{- partial "thumb_partial.html" (merge $params (dict "elem" $elem)) -}}
+                {{- end -}}
+            {{- end -}}
         </div>
-    {{- end }}
+    {{- end -}}
 </div>

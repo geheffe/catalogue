@@ -1,0 +1,37 @@
+
+{{- /* Partial indépendant pour une vignette */}}
+{{- $elem := .elem }}
+{{- $filename := path.Base $elem.image.Name }}
+{{- $index := .index | default $elem.weight }}
+
+<article class="thumb">
+    {{- if (eq $elem.type "link") }}
+        <a href="{{ $elem.link }}" class="link" tabindex="0">
+            <img src="{{ $elem.thumb.RelPermalink }}" alt="{{ $elem.title }}">
+        </a>
+        <h2>{{ $elem.title }}</h2>
+    {{- else }}
+        <a class="gallery-item" 
+           phototitle="{{ $elem.phototitle }}"
+           {{ with $elem.description }}{{ printf "description='%s'" (. | markdownify) | safeHTMLAttr }}{{ end }}
+           gallery_index="{{ $index }}"
+           id="{{ md5 $filename }}"
+           orig_name="{{ $filename }}"
+           href="{{ $elem.full.RelPermalink }}">
+            <img src="{{ $elem.thumb.RelPermalink }}" {{ with $elem.alt }}alt="{{ . }}"{{ end }}>
+            {{ with $elem.description }}<div class="invis_desc">{{ . | markdownify }}</div>{{ end }}
+        </a>
+        {{ if $.show_taxonomies }}
+            <div class="caption_tax">
+                {{ range $taxname, $terms := $elem.taxonomies }}
+                    {{ range $terms }}
+                        <div class="tax_term">
+                            <a href="{{ printf "/%s/#%s" ($taxname | urlize) (. | urlize) | relURL }}">{{ . | humanize }}</a>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        {{ end }}
+        <h2>{{ $elem.phototitle }}</h2>
+    {{- end }}
+</article>
