@@ -11,8 +11,8 @@ draft: false
 resources:
 - src: "/pele_mele/pele_mele_2025.jpg"
   weight: 20
-  description: "Affiche pêle-mêle 2025"
+  phototitle: "Affiche pêle-mêle 2025"
 - src: "/pele_mele/pele_mele_2024.jpg"
   weight: 25
-  description: "Affiche pêle-mêle 2024"
+  phototitle: "Affiche pêle-mêle 2024"
 ---
