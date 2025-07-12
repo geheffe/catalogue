@@ -11,15 +11,18 @@
         </a>
         <h2>{{ $elem.title }}</h2>
     {{- else }}
-        <a class="gallery-item" 
-           phototitle="{{ $elem.phototitle }}"
-           {{ with $elem.description }}{{ printf "description='%s'" (. | markdownify) | safeHTMLAttr }}{{ end }}
+        <a class="gallery-item" phototitle="{{ $elem.phototitle }}"
+           {{ printf "description='%s'" ($elem.description | markdownify) | safeHTMLAttr }}
            gallery_index="{{ $index }}"
-           id="{{ md5 $filename }}"
+           id="{{ md5 $filename }}"                               
            orig_name="{{ $filename }}"
            href="{{ $elem.full.RelPermalink }}">
-            <img src="{{ $elem.thumb.RelPermalink }}" {{ with $elem.alt }}alt="{{ . }}"{{ end }}>
-            {{ with $elem.description }}<div class="invis_desc">{{ . | markdownify }}</div>{{ end }}
+           <div id="image_number_{{ $index }}" class="gallery-item-marker"></div>
+           <img src="{{ $elem.thumb.RelPermalink }}"
+           {{- with $elem.alt }} alt="{{ . }}"{{ end }}>
+           {{- with $elem.description }}
+           <div class="invis_desc">{{ (. | markdownify) | safeHTMLAttr }}</div>
+           {{- end }}
         </a>
         {{ if $.show_taxonomies }}
             <div class="caption_tax">
