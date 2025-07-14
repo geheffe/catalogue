@@ -11,6 +11,7 @@ draft: false
 resources:
 - src: "/affiches/2025/affiche-brocart-2025.jpg"
   weight: 60
+  phototitle: "Affiche de Gouesn'Art"
 - src: "/affiches/2025/Cabellou_2025_A5.jpg"
   weight: 65
 - src: "/affiches/2025/Ste_Marine_2025_A5.jpg"
