@@ -8,6 +8,7 @@ draft: false
 #  alt: Image alternative and screen-reader text
 #  phototitle: A title for the photo
 #  description: A sub-title or description for the photo
+# nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
 - src: "/pele_mele/pele_mele_2025.jpg"
   weight: 20
@@ -15,4 +16,7 @@ resources:
 - src: "/pele_mele/pele_mele_2024.jpg"
   weight: 25
   phototitle: "Affiche pêle-mêle 2024"
+- src: "/pele_mele/pele_mele_2023.jpg"
+  weight: 30
+  phototitle: "Affiche pêle-mêle 2023"
 ---

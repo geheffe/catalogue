@@ -8,6 +8,7 @@ draft: false
 #  alt: Image alternative and screen-reader text
 #  phototitle: A title for the photo
 #  description: A sub-title or description for the photo
+# nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
 - src: "/affiches/2024/coop.jpg"
   weight: 10
