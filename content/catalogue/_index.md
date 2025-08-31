@@ -11,17 +11,17 @@ draft: false
 resources:
 - src: "/catalogue/couverture.jpg"
   weight: 10
-- src: "/catalogue/page_1004.jpg"
+- src: "/catalogue/page_1005.jpg"
   weight: 55
-- src: "/catalogue/page_1010.jpg"
+- src: "/catalogue/page_1011.jpg"
   weight: 110
-- src: "/catalogue/page_1016.jpg"
+- src: "/catalogue/page_1017.jpg"
   weight: 175
-- src: "/catalogue/page_1022.jpg"
+- src: "/catalogue/page_1023.jpg"
   weight: 230
-- src: "/catalogue/page_1028.jpg"
+- src: "/catalogue/page_1029.jpg"
   weight: 295
-- src: "/catalogue/page_1034.jpg"
+- src: "/catalogue/page_1035.jpg"
   weight: 350
 - src: "/catalogue/page_1100.jpg"
   weight: 1005

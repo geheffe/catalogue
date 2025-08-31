@@ -11,22 +11,24 @@ draft: false
 resources:
 - src: "/bienvenue/bienvenue_intro.jpg"
   weight: 10
-- src: "/bienvenue/photos_Etuve.jpg"
-  weight: 73
-- src: "/bienvenue/photos_capcavalarts.jpg"
-  weight: 74
-- src: "/bienvenue/photos_gouesnach.jpg"
-  weight: 75 
 - src: "/bienvenue/billet_2.jpg"
   weight: 65
 - src: "/bienvenue/billet_3.jpg"
   weight: 70
+- src: "/bienvenue/photos_Broc_Art.jpg"
+  weight: 73
+- src: "/bienvenue/photos_Etuve.jpg"
+  weight: 74
+- src: "/bienvenue/photos_capcavalarts.jpg"
+  weight: 75
+- src: "/bienvenue/photos_gouesnach.jpg"
+  weight: 76
 - src: "/bienvenue/photos_temporaires.jpg"
-  weight: 78
+  weight: 77
 - src: "/bienvenue/billet_1.jpg"
-  weight: 81
+  weight: 80
 - src: "/bienvenue/photos_1.jpg"
-  weight: 90
+  weight: 85
 - src: "/bienvenue/photos_2.jpg"
-  weight: 95
+  weight: 90
 ---

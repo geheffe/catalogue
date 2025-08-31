@@ -18,8 +18,9 @@ resources:
 |              | 
 |      ---     |
 |[Bijoux, &ldquo;Les Pépites Bleues&rdquo;, par Marina](https://www.facebook.com/p/Les-p%C3%A9pites-bleues-100057797823896/)|
+|[Terra Nova Ceramic](https://crealouest.fr/createurs/metiers-d-art/article/terra-nova-ceramic)|
 
-<br><br>
+<br>
 
 <center>
 
