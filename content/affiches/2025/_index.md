@@ -17,20 +17,22 @@ resources:
 - src: "/affiches/2025/Ste_Marine_2025_A5.jpg"
   weight: 70
 - src: "/affiches/2025/Ste_Marine_2025_TV.jpg"
+  weight: 73
+- src: "/affiches/2025/Marché_de_Noel_Nevez.jpg"
   weight: 75
 - src: "/affiches/2025/affiche-brocart-2025.jpg"
-  weight: 81
+  weight: 80
   phototitle: "Affiche de Gouesn'Art"
 - src: "/affiches/2025/Francoise_Botrel_Rey_Etuve_A5_2025.jpg"
-  weight: 86
+  weight: 85
 - src: "/affiches/2025/capcavalarts_2025_A5.jpg"
-  weight: 91
+  weight: 90
 - src: "/affiches/2025/gouesnach_2025.jpg"
-  weight: 96
+  weight: 95
 - src: "/affiches/2025/chateauneuf_2025.jpg"
-  weight: 101
+  weight: 100
 - src: "/affiches/2025/melgven_2025.jpg"
-  weight: 106
+  weight: 105
 ---
 
 
