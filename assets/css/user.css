@@ -20,7 +20,7 @@
 }
 
 /* Adaptation mobile */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .flexrow {
         flex-wrap: wrap;
     }
@@ -362,9 +362,11 @@ header, .header, #header {
 .mfp-img.zoomed {
     transform: scale(2.2) translate(var(--tx, 0), var(--ty, 0)) !important;
     cursor: grab !important;
+    transition: transform 0.1s ease-out !important;
     will-change: transform;
     position: relative;
     z-index: 2147483647;
+    transform-origin: center center !important; /* Ajout important */
 }
 
 /* Curseurs */
