@@ -4,7 +4,7 @@ baseurl = "https://geheffe.github.io/catalogue/"
 #relativeURLs = true  # Ajoutez cette ligne (crucial pour les chemins locaux)
 publishDir = "public"  # Assurez-vous que c'est bien le dossier de sortie
 languageCode = "fr"
-title = "Le catalogue de Françoise"
+title = "La peinture de Françoise"
 theme = "autophugo"
 disableKinds = ["taxonomy", "term"]
 #[taxonomies]
@@ -16,12 +16,12 @@ disableKinds = ["taxonomy", "term"]
         ID = 'G-T2GZF6D03D'
 [params]
     # Meta
-    description = "Catalogue de Francoise"
+    description = "Françoise Botrel Rey, ma peinture sur le nuage !"
     keywords = "autophugo"
     #msvalidate = ""
     #googlesiteverification = ""
     thumb_width = 600
-    thumb_quality = 70
+    thumb_quality = 75
     full_width = 1200
     full_quality = 85
     column_count = 2

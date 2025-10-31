@@ -8,7 +8,11 @@
                 {{ $menuItems := slice
                     (dict "path" "" "name" "Accueil" "icon" "🏠")
                     (dict "path" "bienvenue" "name" "Bienvenue" "icon" "🫶")
-                    (dict "path" "catalogue" "name" "Catalogue" "icon" "🎨")
+                    (dict "path" "galerie" "name" "Galerie" "icon" "📷" "submenu" (slice
+                        (dict "path" "galerie/2025" "name" "👉 2025")
+                        (dict "path" "galerie/2024" "name" "👉 2024")
+                    ))
+                    (dict "path" "catalogue" "name" "Le Book !" "icon" "🎨")                    
                     (dict "path" "affiches" "name" "Affiches" "icon" "🖼️" "submenu" (slice
                         (dict "path" "affiches/2025" "name" "👉 2025")
                         (dict "path" "affiches/2024" "name" "👉 2024")

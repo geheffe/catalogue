@@ -118,9 +118,13 @@ function toggleZoom(e) {
     const isZoomed = img.classList.toggle('zoomed');
     
     if (isZoomed) {
+        // Réinitialise la position au zoom
+        translateX = 0;
+        translateY = 0;
         img.style.setProperty('--tx', '0px');
         img.style.setProperty('--ty', '0px');
     } else {
+        // Enlève les propriétés au dézoom
         img.style.removeProperty('--tx');
         img.style.removeProperty('--ty');
     }
@@ -133,21 +137,24 @@ function handleMove(e) {
     const img = document.querySelector('.mfp-img.zoomed');
     if (!img) return;
 
-    // Calcul des nouvelles positions
     const clientX = e.clientX || e.touches[0].clientX;
     const clientY = e.clientY || e.touches[0].clientY;
     
-    // Dans handleMove()
-    translateX = (clientX - startX) * 0.8; // Réduit la vitesse
+    translateX = clientX - startX;
     translateY = clientY - startY;
-///////// Pour limiter le déplacement aux bords de l'image : //////////////    
+
+    // Version alternative : limites basées sur la taille visible
     const imgRect = img.getBoundingClientRect();
     const scale = 2.2;
-//               Limites calculées dynamiquement
-    translateX = Math.min(Math.max(translateX, -imgRect.width * (scale-1)/2), imgRect.width * (scale-1)/2);
-    translateY = Math.min(Math.max(translateY, -imgRect.height * (scale-1)/2), imgRect.height * (scale-1)/2);   
-///////////////////////////////////////////////////////////////////////////
-    // Applique la position
+    
+    // Limites empiriques - ajustez ces valeurs selon vos besoins
+    const limitFactor = 0.11; // Réduit cette valeur pour moins de marge de déplacement
+    const maxMoveX = imgRect.width * limitFactor;
+    const maxMoveY = imgRect.height * limitFactor;
+    
+    translateX = Math.min(Math.max(translateX, -maxMoveX), maxMoveX);
+    translateY = Math.min(Math.max(translateY, -maxMoveY), maxMoveY);
+
     img.style.setProperty('--tx', `${translateX}px`);
     img.style.setProperty('--ty', `${translateY}px`);
 }

@@ -8,23 +8,26 @@ draft: false
 #  alt: Image alternative and screen-reader text
 #  phototitle: A title for the photo
 #  description: A sub-title or description for the photo
+# nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
 - src: "/catalogue/couverture.jpg"
   weight: 10
-- src: "/catalogue/page_1005.jpg"
-  weight: 55
-- src: "/catalogue/page_1011.jpg"
-  weight: 110
-- src: "/catalogue/page_1017.jpg"
-  weight: 175
-- src: "/catalogue/page_1023.jpg"
-  weight: 230
-- src: "/catalogue/page_1029.jpg"
-  weight: 295
-- src: "/catalogue/page_1035.jpg"
-  weight: 350
+- src: "/catalogue/page_1006.jpg"
+  weight: 15
+- src: "/catalogue/page_1012.jpg"
+  weight: 20
+- src: "/catalogue/page_1018.jpg"
+  weight: 25
+- src: "/catalogue/page_1024.jpg"
+  weight: 30
+- src: "/catalogue/page_1030.jpg"
+  weight: 35
+- src: "/catalogue/page_1036.jpg"
+  weight: 40
+- src: "/catalogue/page_1037.jpg"
+  weight: 45
 - src: "/catalogue/page_1100.jpg"
-  weight: 1005
+  weight: 1000
 - src: "/catalogue/page_1101.jpg"
-  weight: 1010
+  weight: 1005
 ---

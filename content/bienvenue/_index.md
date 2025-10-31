@@ -8,6 +8,7 @@ draft: false
 #  alt: Image alternative and screen-reader text
 #  phototitle: A title for the photo
 #  description: A sub-title or description for the photo
+# nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
 - src: "/bienvenue/bienvenue_intro.jpg"
   weight: 10
@@ -15,20 +16,7 @@ resources:
   weight: 65
 - src: "/bienvenue/billet_3.jpg"
   weight: 70
-- src: "/bienvenue/photos_Broc_Art.jpg"
-  weight: 73
-- src: "/bienvenue/photos_Etuve.jpg"
-  weight: 74
-- src: "/bienvenue/photos_capcavalarts.jpg"
+- src: "/bienvenue/billet_4.jpg"
   weight: 75
-- src: "/bienvenue/photos_gouesnach.jpg"
-  weight: 76
-- src: "/bienvenue/photos_temporaires.jpg"
-  weight: 77
-- src: "/bienvenue/billet_1.jpg"
-  weight: 80
-- src: "/bienvenue/photos_1.jpg"
-  weight: 85
-- src: "/bienvenue/photos_2.jpg"
-  weight: 90
 ---
+
