@@ -2,7 +2,7 @@
 title: "Affiches 2025"
 date: 2025-06-04T17:16:06+02:00
 weight: 90
-albumthumb: "/affiches/2025/Marché_de_Noel_Nevez.jpg"
+albumthumb: "/affiches/2025/Marche_de_Noel_Nevez.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
@@ -10,7 +10,7 @@ draft: false
 #  description: A sub-title or description for the photo
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
-- src: "/affiches/2025/Marché_de_Noel_Nevez.jpg"
+- src: "/affiches/2025/Marche_de_Noel_Nevez.jpg"
   weight: 60
 - src: "/affiches/2025/Ste_Marine_2025_A5.jpg"
   weight: 65
@@ -34,5 +34,4 @@ resources:
 - src: "/affiches/2025/melgven_2025.jpg"
   weight: 116
 ---
-
 
