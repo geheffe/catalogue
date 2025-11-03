@@ -358,31 +358,41 @@ header, .header, #header {
 
 /****************** Debut magnific-zoom *****************************/
 
-/* État zoomé PERSISTANT */
-.mfp-img.zoomed {
-    transform: scale(2.2) translate(var(--tx, 0), var(--ty, 0)) !important;
-    cursor: grab !important;
-    transition: transform 0.1s ease-out !important;
-    will-change: transform;
-    position: relative;
-    z-index: 2147483647;
-    transform-origin: center center !important; /* Ajout important */
+/* État zoomé - UNIQUEMENT POUR DESKTOP */
+@media (hover: hover) and (pointer: fine) {
+    .mfp-img.zoomed {
+        transform: scale(2.2) translate(var(--tx, 0), var(--ty, 0)) !important;
+        cursor: grab !important;
+        transition: transform 0.1s ease-out !important;
+        will-change: transform;
+        position: relative;
+        z-index: 2147483647;
+        transform-origin: center center !important;
+    }
+
+    /* Curseurs desktop */
+    .mfp-img {
+        cursor: zoom-in !important;
+        transition: transform 0.1s ease-out !important;
+    }
+    .mfp-img.zoomed:active {
+        cursor: grabbing !important;
+    }
 }
 
-/* Curseurs */
-.mfp-img {
-    cursor: zoom-in !important;
-    transition: transform 0.1s ease-out !important;
-}
-.mfp-img.zoomed:active {
-    cursor: grabbing !important;
+/* Pour mobile - on laisse le comportement natif */
+@media (pointer: coarse) {
+    .mfp-img {
+        cursor: default !important;
+        touch-action: pan-x pan-y pinch-zoom;
+    }
 }
 
 /* Conteneur */
 .mfp-container {
     overflow: visible !important;
-    touch-action: none !important; /* Essential pour mobile */
 }
+
 /************************************************************/
 button.mfp-close {
     all: unset !important;
@@ -400,3 +410,4 @@ button.mfp-close {
     justify-content: center !important;
     z-index: 99999 !important;
 }
+/************************************************************/

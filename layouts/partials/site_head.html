@@ -79,7 +79,19 @@ if ('ontouchstart' in window) {
 }
 
 /////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////////////
-// Override total de Magnific
+<!-- Override this file in your site's layout to embed custom content in HEAD -->
+// DÉTECTION MOBILE - AU DÉBUT
+const isMobile = 'ontouchstart' in window;
+
+/////////////////////////\\\\\\ Zoom      \\\\\\///////////////////////////////////
+if (isMobile) {
+    document.querySelectorAll('.mfp-img').forEach(img => {
+        img.style.touchAction = 'pan-x pan-y pinch-zoom'; // Zoom natif activé
+    });
+}
+
+/////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////////////
+// Override total de Magnific - MODIFIÉ POUR MOBILE
 function nuclearZoom() {
     const container = document.querySelector('.mfp-wrap');
     const img = document.querySelector('.mfp-img');    
@@ -87,30 +99,36 @@ function nuclearZoom() {
     
     img.dataset.zoomFixed = "true";
     
-    img.addEventListener('click', function(e) {
-        // Empêche tout comportement par défaut
-        e.stopImmediatePropagation();
-        e.preventDefault();
-    
-        // Zoom/dézoom instantané
-        const isZoomed = this.classList.toggle('zoomed');
-    
-        // Applique immédiatement la transformation
-        if (isZoomed) {
-            this.style.transform = `scale(2.2) translate(0, 0)`;
-        } else {
-            this.style.transform = 'scale(1)';
-        }
-    }, { capture: true });
+    // SUR MOBILE : ON DÉSACTIVE LE ZOOM 2.2
+    if (!isMobile) {
+        img.addEventListener('click', function(e) {
+            // Empêche tout comportement par défaut
+            e.stopImmediatePropagation();
+            e.preventDefault();
         
+            // Zoom/dézoom instantané
+            const isZoomed = this.classList.toggle('zoomed');
+        
+            // Applique immédiatement la transformation
+            if (isZoomed) {
+                this.style.transform = `scale(2.2) translate(0, 0)`;
+            } else {
+                this.style.transform = 'scale(1)';
+            }
+        }, { capture: true });
+    }
 }
+
 ///////////////////////////////////////////////////////////////////////////
 
 // Variables globales
 let isDragging = false, startX, startY, translateX = 0, translateY = 0;
 
-// Gestionnaire de zoom PERSISTANT
+// Gestionnaire de zoom PERSISTANT - MODIFIÉ POUR MOBILE
 function toggleZoom(e) {
+    // SUR MOBILE : ON NE FAIT RIEN
+    if (isMobile) return;
+    
     const img = e.target.closest('.mfp-img');
     if (!img || isDragging) return;
 
@@ -130,7 +148,7 @@ function toggleZoom(e) {
     }
 }
 
-// Gestion du drag
+// Gestion du drag - MODIFIÉ POUR MOBILE
 function handleMove(e) {
     if (!isDragging) return;
     
@@ -159,7 +177,7 @@ function handleMove(e) {
     img.style.setProperty('--ty', `${translateY}px`);
 }
 
-// Événements desktop
+// Événements desktop - inchangé
 document.addEventListener('mousedown', (e) => {
     const img = e.target.closest('.mfp-img.zoomed');
     if (img) {
@@ -170,8 +188,11 @@ document.addEventListener('mousedown', (e) => {
     }
 });
 
-// Événements tactiles
+// Événements tactiles - MODIFIÉ POUR MOBILE
 document.addEventListener('touchstart', (e) => {
+    // SUR MOBILE : ON DÉSACTIVE LE DRAG PERSONNALISÉ
+    if (isMobile) return;
+    
     const img = e.target.closest('.mfp-img.zoomed');
     if (img && e.touches.length === 1) {
         isDragging = true;
@@ -181,7 +202,7 @@ document.addEventListener('touchstart', (e) => {
     }
 }, { passive: false });
 
-// Événements communs
+// Événements communs - inchangés
 document.addEventListener('mousemove', handleMove);
 document.addEventListener('touchmove', handleMove, { passive: false });
 document.addEventListener('mouseup', endDrag);
@@ -193,16 +214,17 @@ function endDrag() {
     if (img) img.style.cursor = 'grab';
 }
 
-// Initialisation
+// Initialisation - MODIFIÉ POUR MOBILE
 document.addEventListener('mfpOpen', () => {
     document.querySelectorAll('.mfp-img').forEach(img => {
-        img.addEventListener('click', toggleZoom, { capture: true });
+        // SUR MOBILE : ON N'AJOUTE PAS L'ÉVÉNEMENT CLICK
+        if (!isMobile) {
+            img.addEventListener('click', toggleZoom, { capture: true });
+        }
     });
 });
 
-
-///////////////////////////////////////////////////////////////////////////
-// Surveillance agressive
+// Surveillance agressive - inchangé
 setInterval(nuclearZoom, 200);
 document.addEventListener('mfpOpen', nuclearZoom);
 </script>
