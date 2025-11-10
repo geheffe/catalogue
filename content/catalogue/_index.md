@@ -30,4 +30,6 @@ resources:
   weight: 1000
 - src: "/catalogue/page_1101.jpg"
   weight: 1005
+- src: "/catalogue/certificat_authenticite.jpg"
+  weight: 1010
 ---
