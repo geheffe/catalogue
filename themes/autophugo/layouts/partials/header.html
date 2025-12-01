@@ -12,7 +12,8 @@
                         (dict "path" "galerie/2025" "name" "👉 2025")
                         (dict "path" "galerie/2024" "name" "👉 2024")
                     ))
-                    (dict "path" "catalogue" "name" "Le Book !" "icon" "🎨")                    
+                    (dict "path" "catalogue" "name" "Le Book !" "icon" "🎨")
+                    (dict "path" "presentation" "name" "Présentation" "icon" "🧚🏻")
                     (dict "path" "affiches" "name" "Affiches" "icon" "🖼️" "submenu" (slice
                         (dict "path" "affiches/2025" "name" "👉 2025")
                         (dict "path" "affiches/2024" "name" "👉 2024")
@@ -22,9 +23,10 @@
                         (dict "path" "infos/infos_p1" "name" "👉 Infos page n°1")
                         (dict "path" "infos/infos_p2" "name" "👉 Infos page n°2")
                         (dict "path" "infos/et_aussi" "name" "👉 ...et aussi")
+                        (dict "path" "infos/balades"  "name" "👉 Balades")
                     ))
                     (dict "path" "pele_mele" "name" "Pêle-mêle" "icon" "🍂")
-                    (dict "path" "presentation" "name" "Présentation" "icon" "🧚🏻")
+                    (dict "path" "balades" "name" "Balades" "icon" "🥾")
                 }}
                 {{ range $menuItems }}
     <li class="{{ if .submenu }}has-submenu{{ end }}">

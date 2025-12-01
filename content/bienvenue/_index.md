@@ -12,11 +12,11 @@ draft: false
 resources:
 - src: "/bienvenue/bienvenue_intro.jpg"
   weight: 10
-- src: "/bienvenue/billet_2.jpg"
+- src: "/bienvenue/billet_2-page001.jpg"
   weight: 65
-- src: "/bienvenue/billet_3.jpg"
+- src: "/bienvenue/billet_2-page002.jpg"
   weight: 70
-- src: "/bienvenue/billet_4.jpg"
+- src: "/bienvenue/billet_2-page003.jpg"
   weight: 75
 ---
 
