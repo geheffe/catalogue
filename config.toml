@@ -42,7 +42,7 @@ disableKinds = ["taxonomy", "term"]
                     inline = [['\(', '\)']]
         [markup.goldmark.renderHooks]
             [markup.goldmark.renderHooks.link]
-                enableDefault = true
+                useEmbedded = "fallback"
         [markup.goldmark.renderer]
 # sans la commande ci-dessous, le html ne fonctionne pas...
             unsafe = true            
