@@ -1,6 +1,6 @@
 # Settings
 baseurl = "https://geheffe.github.io/catalogue/"
-relativeURLs = true  # Cette ligne est cruciale pour les chemins locaux  
+#relativeURLs = true  # Cette ligne est cruciale pour les chemins locaux  
 publishDir = "public"  # Assurez-vous que c'est bien le dossier de sortie
 languageCode = "fr"
 # Le TITRE principal du site (apparaît dans l'onglet du navigateur et dans les résultats Google)
