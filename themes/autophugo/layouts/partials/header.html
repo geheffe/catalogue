@@ -72,7 +72,7 @@
     {{- $crumb_is_title := .Site.Params.breadcrumb_use_title | default false -}}
 
     <!-- Build the breadcrumb - base URL link, path links for each dir, cur location text -->
-    <a href="{{ .Site.BaseURL }}"><strong>{{ .Site.Title }}</strong></a>
+    <a href="{{ .Site.BaseURL }}"><strong>{{ .Site.Params.tagline | default "La peinture de Françoise" }}</strong></a>
     {{- if gt $use_part_cnt 0 -}}
         {{- range $cur_ind, $element := first (sub $use_part_cnt 1) $url_parts -}}
             {{- $path := string (delimit (first (add $cur_ind 1) $url_parts) "/") -}}
