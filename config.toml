@@ -1,9 +1,12 @@
 # Settings
 baseurl = "https://geheffe.github.io/catalogue/"
-#relativeURLs = true  # Cette ligne est cruciale pour les chemins locaux  
+relativeURLs = true  # Cette ligne est cruciale pour les chemins locaux  
 publishDir = "public"  # Assurez-vous que c'est bien le dossier de sortie
 languageCode = "fr"
-title = "Site officiel de Françoise BOTREL REY Artiste peintre. Découvrez son catalogue, ses actualités, ses expositions en Bretagne et son univers artistique."
+# Le TITRE principal du site (apparaît dans l'onglet du navigateur et dans les résultats Google)
+title = "Françoise BOTREL REY - Artiste Peintre"
+# La DESCRIPTION longue pour Google (balise meta, invisible sur la page)
+description = "Site officiel de Françoise BOTREL REY Artiste peintre. Découvrez son catalogue, ses actualités, ses expositions en Bretagne et son univers artistique."
 theme = "autophugo"
 disableKinds = ["taxonomy", "term"]
 #[taxonomies]
@@ -15,7 +18,8 @@ disableKinds = ["taxonomy", "term"]
         ID = 'G-T2GZF6D03D'
 [params]
     # Meta
-    description = "Françoise Botrel Rey, ma peinture sur le nuage !"
+    # Texte COURT pour l'affichage dans le pied de page (le "tagline")
+    tagline = "La peinture de Françoise"
     keywords = "autophugo"
     #msvalidate = ""
     #googlesiteverification = ""
