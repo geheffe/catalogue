@@ -2,15 +2,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="keywords" content="{{ with .Site.Params.keywords }}{{ . }}{{ end }}">
 
+<!-- Titre de la page principal pour Google (dynamique via Hugo) -->
+<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+<!-- Description DÉTAILLÉE pour les résultats Google -->
+<meta name="description" content="Site officiel de Françoise BOTREL REY. Découvrez quelques pages de son catalogue, ses actualités, ses expositions en Bretagne et son univers artistique.">
+
 <!-- Balises Open Graph pour Telegram/Facebook -->
+<meta property="og:title" content="Françoise BOTREL REY - Artiste peintre" />
+<meta property="og:description" content="Françoise Botrel Rey, ma peinture sur le nuage !" />
+<meta property="og:url" content="https://geheffe.github.io/catalogue/" />
+<meta property="og:type" content="website" />
 <meta property="og:image" content="https://geheffe.github.io/catalogue/{{ (resources.Get "images/vignette_apercu.jpg").RelPermalink }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:title" content="La peinture de Françoise" />
-<meta property="og:description" content="Françoise Botrel Rey, ma peinture sur le nuage !" />
-<meta property="og:url" content="https://geheffe.github.io/catalogue/" />
-<meta property="og:type" content="website" />
 
 {{ $description := $.Param "description" }}
 {{- with $description }}<meta name="description" content="{{ . }}">{{ end }}

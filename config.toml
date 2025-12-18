@@ -4,7 +4,7 @@ baseurl = "https://geheffe.github.io/catalogue/"
 #relativeURLs = true  # Ajoutez cette ligne (crucial pour les chemins locaux)
 publishDir = "public"  # Assurez-vous que c'est bien le dossier de sortie
 languageCode = "fr"
-title = "La peinture de Françoise"
+title = "Françoise BOTREL REY - Artiste peintre"
 theme = "autophugo"
 disableKinds = ["taxonomy", "term"]
 #[taxonomies]
