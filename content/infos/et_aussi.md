@@ -38,7 +38,7 @@ resources:
 |              | 
 |      --:     |
 | [site propulsé par HUGO](https://gohugo.io/)|
-|Galerie de photos concoctées avec le GIMP, Scribus, ImageMagick, sous Fedora|
+|Galerie de photos concoctées avec le GIMP, Scribus, ImageMagick, sous Linux|
 |&copy; Françoise BOTREL REY |
 
 <br>
