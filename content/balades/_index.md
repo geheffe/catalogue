@@ -10,8 +10,12 @@ draft: false
 #  description: A sub-title or description for the photo
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
+- src: "/balades/photos_baie_des_Trepasses-page001.jpg"
+  weight: 490
+- src: "/balades/photos_baie_des_Trepasses-page002.jpg"
+  weight: 495
 - src: "/balades/photos_Gouezec-page001.jpg"
-  weight: 10
+  weight: 500
 - src: "/balades/photos_Gouezec-page002.jpg"
-  weight: 15
+  weight: 505
 ---
