@@ -10,6 +10,10 @@ draft: false
 #  description: A sub-title or description for the photo
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
+- src: "/balades/photos_Erdeven-page001.jpg"
+  weight: 480
+- src: "/balades/photos_Erdeven-page002.jpg"
+  weight: 485
 - src: "/balades/photos_baie_des_Trepasses-page001.jpg"
   weight: 490
 - src: "/balades/photos_baie_des_Trepasses-page002.jpg"

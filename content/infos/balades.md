@@ -17,6 +17,7 @@ resources:
 
 |              | 
 |      ---     |
+|[circuit Erdeven](https://www.google.com/maps/d/edit?mid=1PQW6XcIYTpC2Z7tcBpad-5DT_R9sgZg&usp=sharing)|
 |[circuit Baie des Trépassés](https://www.google.com/maps/d/edit?mid=1Rhyp5azraMPGFmr03Td-JIvmsx4UuMo&usp=sharing)|
 |[circuit Gouézec](https://www.google.com/maps/d/edit?mid=10mGfb9SLROeHoIzr4kM7mSgwf_Y7qZk&usp=sharing)|
 
