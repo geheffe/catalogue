@@ -1,7 +1,7 @@
 ---
 title: "Affiches 2025"
 date: 2025-06-04T17:16:06+02:00
-weight: 90
+weight: 105
 albumthumb: "/affiches/2025/Ste_Marine_2025_A5.jpg"
 draft: false
 ## Optional additional meta info for resources list

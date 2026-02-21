@@ -1,7 +1,7 @@
 ---
 title: "Affiches 2024"
 date: 2025-06-04T16:52:09+02:00
-weight: 95
+weight: 110
 albumthumb: "/affiches/2024/coop.jpg"
 draft: false
 ## Optional additional meta info for resources list

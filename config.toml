@@ -6,7 +6,7 @@ languageCode = "fr"
 # Le TITRE principal du site (apparaît dans l'onglet du navigateur et dans les résultats Google)
 title = "Françoise BOTREL REY - Artiste Peintre"
 # La DESCRIPTION longue pour Google (balise meta, invisible sur la page)
-description = "Site officiel de Françoise BOTREL REY Artiste peintre. Découvrez son catalogue, ses actualités, ses expositions en Bretagne et son univers artistique."
+description = "Site officiel de Françoise BOTREL REY Artiste peintre en Bretagne. Découvrez son catalogue, ses actualités, ses expositions et son univers artistique."
 theme = "autophugo"
 disableKinds = ["taxonomy", "term"]
 #[taxonomies]

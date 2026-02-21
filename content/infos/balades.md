@@ -17,6 +17,8 @@ resources:
 
 |              | 
 |      ---     |
+|[circuit Pors Poulhan](https://www.google.com/maps/d/edit?mid=1Z9W2xHoJInKuruf5e72BJdr2BcsK1pU&usp=sharing)|
+|[circuit Audierne](https://www.google.com/maps/d/edit?mid=1Ic9yp9l3YTb53jvShYzRA27JUYoW1tY&usp=sharing)|
 |[circuit Erdeven](https://www.google.com/maps/d/edit?mid=1PQW6XcIYTpC2Z7tcBpad-5DT_R9sgZg&usp=sharing)|
 |[circuit Baie des Trépassés](https://www.google.com/maps/d/edit?mid=1Rhyp5azraMPGFmr03Td-JIvmsx4UuMo&usp=sharing)|
 |[circuit Gouézec](https://www.google.com/maps/d/edit?mid=10mGfb9SLROeHoIzr4kM7mSgwf_Y7qZk&usp=sharing)|

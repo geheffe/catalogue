@@ -10,6 +10,10 @@ draft: false
 #  description: A sub-title or description for the photo
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
+- src: "/balades/photos_Audierne_Pors_Poulhan-page001.jpg"
+  weight: 470
+- src: "/balades/photos_Audierne_Pors_Poulhan-page002.jpg"
+  weight: 475
 - src: "/balades/photos_Erdeven-page001.jpg"
   weight: 480
 - src: "/balades/photos_Erdeven-page002.jpg"

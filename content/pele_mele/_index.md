@@ -10,13 +10,16 @@ draft: false
 #  description: A sub-title or description for the photo
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
-- src: "/pele_mele/pele_mele_2025.jpg"
+- src: "/pele_mele/pele_mele_2026.jpg"
   weight: 20
+  phototitle: "Affiche pêle-mêle 2026"  
+- src: "/pele_mele/pele_mele_2025.jpg"
+  weight: 25
   phototitle: "Affiche pêle-mêle 2025"
 - src: "/pele_mele/pele_mele_2024.jpg"
-  weight: 25
+  weight: 30
   phototitle: "Affiche pêle-mêle 2024"
 - src: "/pele_mele/pele_mele_2023.jpg"
-  weight: 30
+  weight: 35
   phototitle: "Affiche pêle-mêle 2023"
 ---

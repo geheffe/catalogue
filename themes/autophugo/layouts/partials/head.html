@@ -15,6 +15,9 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpeg">
 
+<!-- Balise spécifique pour suggérer l'image à Google -->
+<meta name="thumbnail" content="https://geheffe.github.io/catalogue/images/vignette_apercu.jpg">
+
 {{ $description := $.Param "description" }}
 {{- with $description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ $author := .Params.author.name | default .Site.Params.author.name }}
