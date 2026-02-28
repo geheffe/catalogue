@@ -1,5 +1,5 @@
 ---
-title: "Balades"
+title: "Circuits randos"
 date: 2025-11-14T16:33:54+01:00
 weight: 140
 albumthumb: ""
@@ -13,7 +13,7 @@ resources:
 
 |            |           |              | 
 |   ---      |    :-:    |      --:     |
-|  4.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;Balades&nbsp;</span> avec Maps|           | 
+|  4.)       |<span  style="background-color:red; color:#ffd700; font-size:100%; font-family:verdana;">&nbsp;Randos&nbsp;</span> avec Maps|           | 
 
 |              | 
 |      ---     |
