@@ -33,6 +33,19 @@ disableKinds = ["taxonomy", "term"]
     images_downloadable = false
     images_downloadable_use_orig = false
     #taxonomies_links = false
+    [[params.header.links]]
+    #name = "à propos........"
+    #url = "#footer"
+    #icon = "fa-info-circle"
+
+    # Footer panel
+
+    [params.footer.paragraph]
+    headline = "Françoise BOTREL REY, artiste peintre en Bretagne"
+    text = "Beaucoup de couleurs, des portraits, des paysages, des bateaux, des animaux…, des balades aussi ! Les affiches vous permettront de suivre mes actualités, mes expositions et mon univers artistique et bien sûr, des extraits de mon catalogue."
+
+    [params.footer.contact]
+    hide = true # Set this to true if you don't want to have a contact form on your site    
     
     # Voir "Bout de codes" : autorise html dans le markdown.....     
 [markup]

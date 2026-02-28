@@ -14,5 +14,13 @@ resources:
   weight: 100
 - src: "/affiches/2026/Chateauneuf_2026-page001.jpg"
   weight: 105
+- src: "/affiches/2026/corps_de_garde-site.jpg"
+  weight: 110
+- src: "/affiches/2026/Doelan_2026-site.jpg"
+  weight: 115
+- src: "/affiches/2026/temple_lesco-page001_v1.jpg"
+  weight: 120
+- src: "/affiches/2026/Loctudy_2026-site.jpg"
+  weight: 125
 ---
 

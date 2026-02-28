@@ -12,21 +12,21 @@ draft: false
 resources:
 - src: "/catalogue/catalogue_2026b_web-page001.jpg"
   weight: 10
-- src: "/catalogue/catalogue_2026b_web-page003.jpg"
+- src: "/catalogue/catalogue_2026b_web-page004.jpg"
   weight: 15
-- src: "/catalogue/catalogue_2026b_web-page011.jpg"
+- src: "/catalogue/catalogue_2026b_web-page010.jpg"
   weight: 20
-- src: "/catalogue/catalogue_2026b_web-page017.jpg"
+- src: "/catalogue/catalogue_2026b_web-page016.jpg"
   weight: 25
-- src: "/catalogue/catalogue_2026b_web-page023.jpg"
+- src: "/catalogue/catalogue_2026b_web-page022.jpg"
   weight: 30
-- src: "/catalogue/catalogue_2026b_web-page029.jpg"
+- src: "/catalogue/catalogue_2026b_web-page028.jpg"
   weight: 35
-- src: "/catalogue/catalogue_2026b_web-page035.jpg"
+- src: "/catalogue/catalogue_2026b_web-page034.jpg"
   weight: 40
-- src: "/catalogue/catalogue_2026b_web-page041.jpg"
+- src: "/catalogue/catalogue_2026b_web-page040.jpg"
   weight: 45
-- src: "/catalogue/catalogue_2026b_web-page045.jpg"
+- src: "/catalogue/catalogue_2026b_web-page046.jpg"
   weight: 50
 - src: "/catalogue/catalogue_2026b_web-page047.jpg"
   weight: 1005
