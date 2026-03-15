@@ -22,5 +22,9 @@ resources:
   weight: 120
 - src: "/affiches/2026/Loctudy_2026-site.jpg"
   weight: 125
+- src: "/affiches/2026/l_Etuve_2026-site.jpg"
+  weight: 130
+- src: "/affiches/2026/Ste_Marine_2026_v1-site.jpg"
+  weight: 135
 ---
 
