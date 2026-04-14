@@ -10,20 +10,23 @@ draft: false
 #  description: A sub-title or description for the photo
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
-- src: "/galerie/photos_Coop-page001.jpg"
+- src: "/galerie/photos_Galerie_du_port-page001.jpg"
   weight: 10
-- src: "/galerie/photos_Cabellou-page001.jpg"
+- src: "/galerie/photos_Coop-page001.jpg"
   weight: 15
-- src: "/galerie/photos_Patrimoine-page001.jpg"
+- src: "/galerie/photos_Cabellou-page001.jpg"
   weight: 20
-- src: "/galerie/photos_Broc_Art-page001.jpg"
+- src: "/galerie/photos_Patrimoine-page001.jpg"
   weight: 25
-- src: "/galerie/photos_gouesnach-page001.jpg"
+- src: "/galerie/photos_Broc_Art-page001.jpg"
   weight: 30
-- src: "/galerie/photos_capcavalarts-page001.jpg"
+- src: "/galerie/photos_gouesnach-page001.jpg"
   weight: 35
-- src: "/galerie/photos_Etuve-page001.jpg"
+- src: "/galerie/photos_capcavalarts-page001.jpg"
   weight: 40
-- src: "/galerie/photos_saisonieres-page001.jpg"
+- src: "/galerie/photos_Etuve-page001.jpg"
   weight: 45
+- src: "/galerie/photos_saisonieres-page001.jpg"
+  weight: 50
 ---
+
