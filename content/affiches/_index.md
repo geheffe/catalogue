@@ -2,7 +2,7 @@
 title: "Affiches"
 date: 2026-01-22T02:00:00+01:00
 weight: 30
-albumthumb: "/affiches/2026/Chateauneuf_2026-page001.jpg"
+albumthumb: "/affiches/2026/corps_de_garde-site.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
