@@ -26,7 +26,7 @@ resources:
   weight: 40
 - src: "/galerie/photos_Etuve-page001.jpg"
   weight: 45
-- src: "/galerie/photos_saisonieres-page001.jpg"
+- src: "/galerie/photos_Chateauneuf-page001.jpg"
   weight: 50
 ---
 

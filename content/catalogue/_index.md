@@ -12,21 +12,21 @@ draft: false
 resources:
 - src: "/catalogue/catalogue_2026b_web-page001.jpg"
   weight: 10
-- src: "/catalogue/catalogue_2026b_web-page004.jpg"
+- src: "/catalogue/catalogue_2026b_web-page005.jpg"
   weight: 15
-- src: "/catalogue/catalogue_2026b_web-page010.jpg"
+- src: "/catalogue/catalogue_2026b_web-page009.jpg"
   weight: 20
-- src: "/catalogue/catalogue_2026b_web-page016.jpg"
+- src: "/catalogue/catalogue_2026b_web-page015.jpg"
   weight: 25
-- src: "/catalogue/catalogue_2026b_web-page022.jpg"
+- src: "/catalogue/catalogue_2026b_web-page021.jpg"
   weight: 30
-- src: "/catalogue/catalogue_2026b_web-page028.jpg"
+- src: "/catalogue/catalogue_2026b_web-page027.jpg"
   weight: 35
-- src: "/catalogue/catalogue_2026b_web-page034.jpg"
+- src: "/catalogue/catalogue_2026b_web-page033.jpg"
   weight: 40
-- src: "/catalogue/catalogue_2026b_web-page040.jpg"
+- src: "/catalogue/catalogue_2026b_web-page039.jpg"
   weight: 45
-- src: "/catalogue/catalogue_2026b_web-page046.jpg"
+- src: "/catalogue/Suite_catalogue_2026-page001.jpg"
   weight: 50
 - src: "/catalogue/catalogue_2026b_web-page047.jpg"
   weight: 1005
