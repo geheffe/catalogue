@@ -2,7 +2,7 @@
 title: "Affiches"
 date: 2026-01-22T02:00:00+01:00
 weight: 30
-albumthumb: "/affiches/2026/capcavalarts_2026-site.jpg"
+albumthumb: "/images/affiche_officielle.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
