@@ -2,7 +2,7 @@
 title: "Affiches"
 date: 2026-01-22T02:00:00+01:00
 weight: 30
-albumthumb: "/affiches/2026/Doelan_2026-site.jpg"
+albumthumb: "/affiches/2026/temple_lesco-page001_v1.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
