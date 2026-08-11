@@ -16,7 +16,7 @@ resources:
 |[Lien vers les amis de Châteauneuf du Faou](https://www.lesamisdechateauneufdufaou.fr/)|Foire aux toiles|
 |<span style="font-size:80%;">Le site de Ste Marine est vraiment à découvir. L'Abri du marin bien sûr, la Coop proche de l'embarcadère qui, en saison, vous permet de traverser côté Bénodet. Autres lieux d'exposition : le Fort et le Corps de Garde à la Pointe de Combrit.</span>|[L&rsquo;abri du marin à Ste Marine - Combrit](https://combrit-saintemarine.bzh/se-divertir/culture/musee-de-labri-du-marin/)|
 |[Treffiag&rsquo;Arts qui gère les expos de l&rsquo;Étuve](https://www.facebook.com/groups/treffiagarts/?locale=fr_FR)|[Le calendrier 2026 en pdf](telechargement/planning_Etuve.pdf) |
-|[Mon expo à l'Étuve cette année !](https://www.infolocale.fr/associations/organisme-treffiag-arts-502762/evenement-treffiagat-exposition-musee-peintures-de-francoise-botrel-rey-8953188)| |
+|[Mon expo à l&rsquo;Étuve cette année !](https://www.infolocale.fr/associations/organisme-treffiag-arts-502762/evenement-treffiagat-exposition-musee-peintures-de-francoise-botrel-rey-8953188)| |
 |[Cap Caval&rsquo;Arts](https://www.capcaval.art/)| |
 
 <br>
