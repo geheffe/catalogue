@@ -17,7 +17,7 @@ resources:
 
 |              | 
 |      ---     |
-|[Pour retrouver votre carte dans Google Maps...](telechargement/mode_operatoire_maps.pdf)|
+|[Pour retrouver votre carte dans Google Maps..](telechargement/mode_operatoire_maps.pdf)|
 |[circuit Pors Poulhan](https://www.google.com/maps/d/edit?mid=1Z9W2xHoJInKuruf5e72BJdr2BcsK1pU&usp=sharing)|
 |[circuit Audierne](https://www.google.com/maps/d/edit?mid=1Ic9yp9l3YTb53jvShYzRA27JUYoW1tY&usp=sharing)|
 |[circuit Erdeven](https://www.google.com/maps/d/edit?mid=1PQW6XcIYTpC2Z7tcBpad-5DT_R9sgZg&usp=sharing)|
