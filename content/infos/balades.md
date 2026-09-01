@@ -17,7 +17,6 @@ resources:
 
 |              | 
 |      ---     |
-|[Pour retrouver votre carte dans Google Maps, cliquez pour lire le mode opératoire](telechargement/mode_operatoire_maps.pdf)|
 |[circuit Pors Poulhan](https://www.google.com/maps/d/edit?mid=1Z9W2xHoJInKuruf5e72BJdr2BcsK1pU&usp=sharing)|
 |[circuit Audierne](https://www.google.com/maps/d/edit?mid=1Ic9yp9l3YTb53jvShYzRA27JUYoW1tY&usp=sharing)|
 |[circuit Erdeven](https://www.google.com/maps/d/edit?mid=1PQW6XcIYTpC2Z7tcBpad-5DT_R9sgZg&usp=sharing)|
@@ -25,16 +24,15 @@ resources:
 |[circuit Gouézec](https://www.google.com/maps/d/edit?mid=10mGfb9SLROeHoIzr4kM7mSgwf_Y7qZk&usp=sharing)|
 
 <br>
-<br>
 
 <center>
 
 {{< figure
   title=""
-  src="/images/bandeau_toiles_4.jpg"
+  src="/images/modop_google_maps-page001.jpg"
   alt="" 
   class=""
   height=""
-  width="80%"
+  width="90%"
 >}}
 
