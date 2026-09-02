@@ -47,12 +47,12 @@
 {{ end }}
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ $.Site.Params.services.googleAnalytics.ID }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.services.googleAnalytics.ID }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '{{ $.Site.Params.services.googleAnalytics.ID }}');
+  gtag('config', '{{ site.Params.services.googleAnalytics.ID }}');
 </script>
 
 {{- $font_awesome := resources.Get "css/font-awesome.min.css" -}}
