@@ -15,7 +15,7 @@ disableKinds = ["taxonomy", "term"]
 
 [services]
     [services.googleAnalytics]
-        ID = 'G-T2GZF6D03D'
+        id = 'G-T2GZF6D03D'
 [params]
     # Meta
     # Texte COURT pour l'affichage dans le pied de page (le "tagline")
