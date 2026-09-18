@@ -356,58 +356,143 @@ header, .header, #header {
 }
 /****************** Fin du cadrage des pages infos ******************/
 
-/****************** Debut magnific-zoom *****************************/
+/****************** ZOOM PROGRESSIF *****************************/
 
-/* État zoomé - UNIQUEMENT POUR DESKTOP */
+/* Uniquement pour desktop */
 @media (hover: hover) and (pointer: fine) {
-    .mfp-img.zoomed {
-        transform: scale(2.2) translate(var(--tx, 0), var(--ty, 0)) !important;
-        cursor: grab !important;
-        transition: transform 0.1s ease-out !important;
-        will-change: transform;
-        position: relative;
-        z-index: 2147483647;
-        transform-origin: center center !important;
-    }
-
-    /* Curseurs desktop */
+    
+    /* Image dans la lightbox */
     .mfp-img {
-        cursor: zoom-in !important;
-        transition: transform 0.1s ease-out !important;
+        cursor: grab !important;
+        transition: transform 0.15s ease-out !important;
+        will-change: transform;
+        user-select: none;
+        -webkit-user-select: none;
     }
-    .mfp-img.zoomed:active {
+    
+        /* Pendant le clic maintenu (drag en cours) */
+        .mfp-img:active {
+            cursor: grabbing !important;
+        }
+    }
+    
+    /* Pendant le drag */
+    .mfp-img:active {
         cursor: grabbing !important;
     }
-}
+    
+    
+    /* Indicateur de zoom */
+    #zoom-hint {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.75);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-family: sans-serif;
+        z-index: 99999;
+        pointer-events: none;
+        opacity: 1;
+        transition: opacity 0.8s ease;
+        white-space: nowrap;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
 
-/* Pour mobile - on laisse le comportement natif */
+    #zoom-hint.fade-out {
+        opacity: 0;
+    }
+
+
+
+
+/* Mobile : comportement natif */
 @media (pointer: coarse) {
     .mfp-img {
         cursor: default !important;
-        touch-action: pan-x pan-y pinch-zoom;
+        touch-action: pan-x pan-y pinch-zoom !important;
+        transform: none !important;
+        transition: none !important;
     }
 }
 
-/* Conteneur */
-.mfp-container {
-    overflow: visible !important;
-}
-
-/************************************************************/
+/* Style du bouton de fermeture (vous l'aviez déjà) */
 button.mfp-close {
     all: unset !important;
     position: fixed !important;
-    top: 20px !important;
+    top: 15px !important;
     right: 20px !important;
-    background: red !important;
+    background: #d33 !important;              /* rouge vif */
     color: white !important;
     width: 30px !important;
     height: 30px !important;
-    font-size: 30px !important;
+    font-size: 28px !important;
+    font-weight: bold;
     border-radius: 50% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     z-index: 99999 !important;
+    cursor: pointer !important;
+    transition: background 0.2s ease, transform 0.2s ease !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
 }
+
+button.mfp-close:hover {
+    background: #b22 !important;              /* rouge plus foncé au survol */
+    transform: scale(1.1) !important;
+}
+
+/* Conteneur pour le bon positionnement */
+.mfp-container {
+    overflow: visible !important;
+}
+
+    #zoom-controls {
+    position: fixed;
+    top: 15px;
+    right: 72px;
+    display: flex;
+    gap: 6px;
+    z-index: 99999;
+}
+
+#zoom-controls button {
+    all: unset;
+    width: 30px;
+    height: 30px;
+    background: #d33;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    user-select: none;
+}
+
+#zoom-controls button:hover {
+    background: #b22;
+    transform: scale(1.1);
+}
+
+#zoom-controls button:active {
+    transform: scale(0.95);
+}
+
+#zoom-controls button:disabled {
+    background: #888;
+    opacity: 0.6;
+    cursor: default;
+    transform: none !important;
+}
+
 /************************************************************/
