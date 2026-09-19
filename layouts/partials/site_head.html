@@ -166,6 +166,7 @@ function applyTransform(img) {
     clampTranslation(img);
     img.style.transform = `scale(${currentScale}) translate(${translateX}px, ${translateY}px)`;
     img.style.transformOrigin = 'center center';
+    updateZoomLevel();       // ← AJOUT
 }
 
 // Reset
@@ -181,6 +182,7 @@ function resetZoom(img) {
         img.style.transform = '';
         img.style.cursor = 'grab';
     }
+    updateZoomLevel();       // ← AJOUT
 }
 
 function updateZoomButtons() {
@@ -252,6 +254,27 @@ function zoomByStep(direction) {
     currentScale = newScale;
     applyTransform(img);
     updateZoomButtons();
+}
+
+function showZoomLevel() {
+    if (isMobile) return;
+    if (document.getElementById('zoom-level')) return;
+    
+    const el = document.createElement('div');
+    el.id = 'zoom-level';
+    el.textContent = '100 %';
+    document.body.appendChild(el);
+}
+
+function hideZoomLevel() {
+    const el = document.getElementById('zoom-level');
+    if (el) el.remove();
+}
+
+function updateZoomLevel() {
+    const el = document.getElementById('zoom-level');
+    if (!el) return;
+    el.textContent = Math.round(currentScale * 100) + ' %';
 }
 
 // Vérifier si une lightbox est ouverte
@@ -430,8 +453,10 @@ function initObserver() {
                     if (old) old.remove();
                     // Recréer le badge
                     showZoomHint();
+                    showZoomLevel();          // ← AJOUT
                     showZoomButtons();
                     updateZoomButtons();
+                    updateZoomLevel();        // ← AJOUT (état initial à 100 %)
                     
                 }
             }
@@ -447,6 +472,7 @@ function initObserver() {
                 isDragging = false;
                 isRealDrag = false;
                 hideZoomButtons();
+                hideZoomLevel();          // ← AJOUT
             }
         }
     }, 100);
