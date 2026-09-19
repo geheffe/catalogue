@@ -10,23 +10,23 @@ draft: false
 #  description: A sub-title or description for the photo
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
-- src: "/galerie/photos_Arts_in_Loc-page001.jpg"
-  weight: 10
-- src: "/galerie/photos_Temple_des_Arts-page001.jpg"
-  weight: 15
-- src: "/galerie/photos_Doelan-page001.jpg"
-  weight: 20
-- src: "/galerie/photos_Corps_de_garde-page001.jpg"
-  weight: 25
-- src: "/galerie/photos_Galerie_du_port-page001.jpg"
-  weight: 30
-- src: "/galerie/photos_Coop-page001.jpg"
-  weight: 35
-- src: "/galerie/photos_Cabellou-page001.jpg"
-  weight: 40
-- src: "/galerie/photos_capcavalarts-page001.jpg"
-  weight: 45
 - src: "/galerie/photos_Etuve-page001.jpg"
+  weight: 10
+- src: "/galerie/photos_Arts_in_Loc-page001.jpg"
+  weight: 15
+- src: "/galerie/photos_Temple_des_Arts-page001.jpg"
+  weight: 20
+- src: "/galerie/photos_Doelan-page001.jpg"
+  weight: 25
+- src: "/galerie/photos_Corps_de_garde-page001.jpg"
+  weight: 30
+- src: "/galerie/photos_Galerie_du_port-page001.jpg"
+  weight: 35
+- src: "/galerie/photos_Coop-page001.jpg"
+  weight: 40
+- src: "/galerie/photos_Cabellou-page001.jpg"
+  weight: 45
+- src: "/galerie/photos_capcavalarts-page001.jpg"
   weight: 50
 - src: "/galerie/photos_Chateauneuf-page001.jpg"
   weight: 55
