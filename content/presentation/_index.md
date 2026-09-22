@@ -11,11 +11,15 @@ draft: false
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
 - src: "/presentation/presentation.jpg"
-  weight: 20
+  weight: 10
 - src: "/presentation/presentation_2026_D-page001.jpg"
-  weight: 25
+  weight: 15
 - src: "/presentation/presentation_2026_UK-page001.jpg"
-  weight: 30
+  weight: 20
 - src: "/presentation/photos_Atelier_91.jpg"
+  weight: 25
+- src: "/presentation/Gladys_Heraud_copiste-page001.jpg"
+  weight: 30
+- src: "/presentation/Gladys_Heraud_copiste-page002.jpg"
   weight: 35
 ---
