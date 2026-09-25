@@ -4,7 +4,7 @@ baseurl = "https://geheffe.github.io/catalogue/"
 publishDir = "public"  # Assurez-vous que c'est bien le dossier de sortie
 languageCode = "fr"
 # Le TITRE principal du site (apparaît dans l'onglet du navigateur et dans les résultats Google)
-title = "Françoise BOTREL REY - Artiste Peintre"
+title = "Françoise BOTREL REY, artiste peintre"
 # La DESCRIPTION longue pour Google (balise meta, invisible sur la page)
 description = "Site officiel de Françoise BOTREL REY Artiste peintre en Bretagne. Découvrez son catalogue, ses actualités, ses expositions et son univers artistique."
 theme = "autophugo"
@@ -19,7 +19,7 @@ disableKinds = ["taxonomy", "term"]
 [params]
     # Meta
     # Texte COURT pour l'affichage dans le pied de page (le "tagline")
-    tagline = "La peinture de Françoise"
+    #tagline = "La peinture de Françoise"
     keywords = "autophugo"
     #msvalidate = ""
     #googlesiteverification = ""
@@ -34,15 +34,15 @@ disableKinds = ["taxonomy", "term"]
     images_downloadable_use_orig = false
     #taxonomies_links = false
     [[params.header.links]]
-    #name = "à propos........"
-    #url = "#footer"
-    #icon = "fa-info-circle"
+    #name = "à propos....."
+    url = "#footer"
+    icon = "fa-info-circle"
 
-    # Footer panel
+    #Footer panel
 
     [params.footer.paragraph]
-    headline = "Françoise BOTREL REY, artiste peintre en Bretagne"
-    text = "Beaucoup de couleurs, des portraits, des paysages, des bateaux, des animaux…, des balades aussi ! Les affiches vous permettront de suivre mes actualités, mes expositions et mon univers artistique et bien sûr, des extraits de mon catalogue."
+    headline = "**Françoise BOTREL REY**, *artiste peintre en Bretagne*"
+    text = "Beaucoup de couleurs, des portraits, des paysages, des bateaux, des animaux… des balades aussi ! Les affiches vous permettront de suivre mes actualités, mes expositions, mon univers artistique et bien sûr, des extraits de mon catalogue. En 2011, dans un atelier de peinture à Paris, j'ai découvert la **peinture à l’huile** . Nous avions une fois par mois cours avec **Gladys Heraud**, copiste agréée au **musée du Louvre**. Ce fut une révélation, j’ai beaucoup appris et fait du *portrait*, mon sujet de prédilection.<br><br> *Texte libre de droits pour usage presse. Crédit photo :* Françoise BOTREL REY."
 
     [params.footer.contact]
     hide = true # Set this to true if you don't want to have a contact form on your site    
@@ -55,7 +55,7 @@ disableKinds = ["taxonomy", "term"]
                 enable = true
                 [markup.goldmark.extensions.passthrough.delimiters]
                     block = [['\[', '\]'], ['$$', '$$']]
-                    inline = [['\(', '\)']]
+                    inline = [['\(', '\)']]        
         [markup.goldmark.renderHooks]
             [markup.goldmark.renderHooks.link]
                 useEmbedded = "fallback"
@@ -65,7 +65,7 @@ disableKinds = ["taxonomy", "term"]
     [markup.goldmark.parser]
       wrapStandAloneImageWithinParagraph = false
       [markup.goldmark.parser.attribute]
-        block = true
+        block = true      
     [markup.highlight]
       anchorLineNos = false
       codeFences = true
@@ -82,7 +82,7 @@ disableKinds = ["taxonomy", "term"]
       wrapperClass = 'highlight'      
         
 [params.render_hooks.image]
-errorLevel = 'warning' # ignore (default), warning, or error (fails the build)
+ errorLevel = 'warning' # ignore (default), warning, or error (fails the build)
             
 [module]
     [module.hugoVersion]

@@ -1,7 +1,75 @@
 /* Override this by placing your own custom "user.css" in your "assets/css" directory.  When you do, this file will automatically be ignored! */
 
-/********************                                  **********************/
+strong {
+    color: inherit; /* ou la couleur or du thème */
+    font-weight: bold;
+}
 
+/****************** Header : icône à propos ******************/
+/* Desktop */
+#header nav > ul > li a.icon:before {
+  color: #ffd700;
+  font-size: 1.3em;
+  float: right;
+  margin-left: 0.5em;
+  transform: translateX(-60px) translateY(6px);  
+}
+/* Mobile : décalage plus marqué */
+@media screen and (max-width: 768px) {
+  #header nav > ul > li a.icon:before {
+    font-size: 1.5em;
+    transform: translateX(-60px) translateY(2px);
+  }
+}
+
+/****************** Panel : cadre doré ******************/
+#footer.panel {
+  left: 1em;
+  right: 1em;
+  width: auto;
+  background: rgba(66, 55, 55, 0.97) url('../images/red-background.jpg') repeat;
+  border: 4px solid rgba(255,215,0,0.4);
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 736px) {
+  #footer.panel {
+    left: 0.5em;
+    right: 0.5em;
+    border: 2px solid rgba(255,215,0,0.4);
+    border-radius: 12px;
+  }
+}
+
+/****************** Panel : croix de fermeture plus discrète ******************/
+.panel > .closer {
+  background-image: none;         /* on abandonne l'image rouge */
+  background-size: auto;
+  color: #FFD700;                 /* croix dorée, comme le reste */
+  font-size: 1.5em;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 2.5em;             /* centre verticalement */
+  text-align: center;             /* centre horizontalement */
+  opacity: 0.5;                   /* discrète au repos */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.panel > .closer::before {
+  content: "✕";
+  display: block;
+}
+.panel > .closer:hover {
+  opacity: 1;
+}
+
+/****************** Footer : lien Hugo ******************/
+#footer .copyright a {
+  color: #5ab4db;
+}
+#footer .copyright a:hover {
+  color: #ffd700;
+  border-bottom-color: transparent;
+}
 
 /******************** modification tri des vignettes  ***********************/
 /* Conteneur principal */
