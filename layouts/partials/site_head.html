@@ -127,7 +127,8 @@ function showZoomHint() {
 // État
 let currentScale = 1;
 const MIN_SCALE = 1;
-const MAX_SCALE = 5;
+//const MAX_SCALE = 5;
+const MAX_SCALE = 4;
 const STEP = 0.15;
 
 let isDragging = false;
@@ -226,7 +227,8 @@ function hideZoomButtons() {
 }
 
 // Paliers de zoom pour les boutons + / −
-const ZOOM_STEPS = [1, 1.25, 1.5, 2, 2.5, 3, 4, 5];
+//const ZOOM_STEPS = [1, 1.25, 1.5, 2, 2.5, 3, 4, 5];
+const ZOOM_STEPS = [1, 1.25, 1.5, 2, 2.5, 3, 4];
 
 function zoomByStep(direction) {
     const img = getZoomImg();
