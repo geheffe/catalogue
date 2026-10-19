@@ -14,21 +14,23 @@ resources:
   weight: 100
 - src: "/affiches/2026/Ste_Marine_2026_paysage-site.jpg"
   weight: 105
-- src: "/affiches/2026/galerie_du_port-page001.jpg"
+- src: "/affiches/2026/week_end_des_arts-page001.jpg"
   weight: 107
-- src: "/affiches/2026/Chateauneuf_2026-page001.jpg"
+- src: "/affiches/2026/galerie_du_port-page001.jpg"
   weight: 120
-- src: "/affiches/2026/corps_de_garde-site.jpg"
+- src: "/affiches/2026/Chateauneuf_2026-page001.jpg"
   weight: 125
-- src: "/affiches/2026/capcavalarts_2026-site.jpg"
+- src: "/affiches/2026/corps_de_garde-site.jpg"
   weight: 130
-- src: "/affiches/2026/Doelan_2026-site.jpg"
+- src: "/affiches/2026/capcavalarts_2026-site.jpg"
   weight: 135
-- src: "/affiches/2026/temple_lesco-page001_v1.jpg"
+- src: "/affiches/2026/Doelan_2026-site.jpg"
   weight: 140
-- src: "/affiches/2026/Loctudy_2026-site.jpg"
+- src: "/affiches/2026/temple_lesco-page001_v1.jpg"
   weight: 145
-- src: "/affiches/2026/l_Etuve_2026-site.jpg"
+- src: "/affiches/2026/Loctudy_2026-site.jpg"
   weight: 150
+- src: "/affiches/2026/l_Etuve_2026-site.jpg"
+  weight: 155
 ---
 
