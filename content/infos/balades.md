@@ -23,16 +23,20 @@ resources:
 |[circuit Baie des Trépassés](https://www.google.com/maps/d/edit?mid=1Rhyp5azraMPGFmr03Td-JIvmsx4UuMo&usp=sharing)|
 |[circuit Gouézec](https://www.google.com/maps/d/edit?mid=10mGfb9SLROeHoIzr4kM7mSgwf_Y7qZk&usp=sharing)|
 
-<br>
+
+**Pour retrouver votre carte dans Google Maps,** .....<br>
+ • Sur **iPhone**, cliquer le lien ouvre la carte dans Google Maps.<br>
+ • Sur **Android** *(smartphone ou tablette connectée à internet par votre smartphone en activant le Point d'accès mobile)*, cliquer le lien ouvre la carte dans votre navigateur. Vérifiez que vous êtes bien connecté à votre compte Google. La carte est alors automatiquement disponible dans l'onglet "Enregistrés" > "Cartes" de votre  application Google Maps. L'onglet du navigateur peut-être fermé. Lorsque vous cliquez sur "Enregistrés" dans Google Maps, il faut faire défiler vers le bas jusqu'à trouver : "Vos trajets, Cartes"<br>
+Cliquez alors "Cartes", puis le lien de la carte souhaitée.
 
 <center>
 
 {{< figure
   title=""
-  src="/images/modop_google_maps-page001.jpg"
+  src="/images/bandeau_toiles_4.jpg"
   alt="" 
   class=""
   height=""
-  width="90%"
+  width="80%"
 >}}
 
