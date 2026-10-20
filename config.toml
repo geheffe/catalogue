@@ -42,7 +42,7 @@ disableKinds = ["taxonomy", "term"]
 
     [params.footer.paragraph]
     headline = "**Françoise BOTREL REY**, *artiste peintre en Bretagne*"
-    text = "Beaucoup de couleurs, des portraits, des paysages, des bateaux, des animaux… des balades aussi ! Les affiches vous permettront de suivre mes actualités, mes expositions, mon univers artistique et bien sûr, des extraits de mon catalogue. En 2011, dans un atelier de peinture à Paris, j'ai découvert la **peinture à l’huile** . Nous avions une fois par mois cours avec **Gladys Heraud**, copiste agréée au **musée du Louvre**. Ce fut une révélation, j’ai beaucoup appris et fait du *portrait*, mon sujet de prédilection.<br><br> *Texte libre de droits pour usage presse. Crédit photo :* Françoise BOTREL REY."
+    text = "Beaucoup de couleurs, des portraits, des paysages, des bateaux, des animaux… des balades aussi ! Les affiches vous permettront de suivre mes actualités, mes expositions, mon univers artistique et bien sûr, des extraits de mon catalogue. En 2011, dans un atelier de peinture à Paris, j'ai découvert la **peinture à l’huile** . Nous avions une fois par mois cours avec **[Gladys Heraud](https://www.leparisien.fr/paris-75/paris-gladys-copiste-au-louvre-83-ans-expose-a-la-mairie-du-vie-arrondissement-18-05-2018-7723857.php)**, copiste agréée au **musée du Louvre**. Ce fut une révélation, j’ai beaucoup appris et fait du *portrait*, mon sujet de prédilection.<br><br> *Texte libre de droits pour usage presse. Crédit photo :* Françoise BOTREL REY."
 
     [params.footer.contact]
     hide = true # Set this to true if you don't want to have a contact form on your site    
