@@ -2,7 +2,7 @@
 title: "Affiches 2026"
 date: 2026-02-04T17:16:06+02:00
 weight: 100
-albumthumb: "/affiches/2026/Ste_Marine_2026_v1-site.jpg"
+albumthumb: "/affiches/2026/galerie_du_port-page001.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text

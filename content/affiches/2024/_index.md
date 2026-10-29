@@ -2,7 +2,7 @@
 title: "Affiches 2024"
 date: 2025-06-04T16:52:09+02:00
 weight: 110
-albumthumb: "/affiches/2024/coop.jpg"
+albumthumb: "/affiches/2024/doelan_2024.jpg"
 draft: false
 ## Optional additional meta info for resources list
 #  alt: Image alternative and screen-reader text
@@ -11,19 +11,19 @@ draft: false
 # nombre pair, affiche à gauche, impair, affiche à droite.
 resources:
 - src: "/affiches/2024/coop.jpg"
-  weight: 10
+  weight: 45
 - src: "/affiches/2024/expo_collective_etuve.jpg"
-  weight: 15
+  weight: 40
 - src: "/affiches/2024/penty.jpg"
-  weight: 30
-- src: "/affiches/2024/doelan_2024.jpg"
   weight: 35
+- src: "/affiches/2024/doelan_2024.jpg"
+  weight: 30
 - src: "/affiches/2024/salon_capcavalarts.jpg"
-  weight: 50
+  weight: 25
 - src: "/affiches/2024/flyer_l_etuve.jpg"
-  weight: 55
+  weight: 20
 - src: "/affiches/2024/flyer_melgven.jpg"
-  weight: 60
+  weight: 15
 - src: "/affiches/2024/ergue_gaberic.jpg"
-  weight: 65
+  weight: 10
 ---
